@@ -1,10 +1,8 @@
 ---
-title: "Practical Examples"
+title: "Practical AI Examples"
 description: "Real-world use cases and implementations"
 weight: 30
 ---
-
-# Practical AI Examples
 
 Real-world examples and implementations of AI in various scenarios.
 

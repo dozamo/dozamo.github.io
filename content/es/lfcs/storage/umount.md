@@ -11,7 +11,9 @@ El comando `umount` en Linux se utiliza para desmontar sistemas de archivos, des
 
 ## umount
 
-> `umount` — Desmonta un sistema de archivos.
+{{% alert %}}
+`umount` — Desmonta un sistema de archivos.
+{{% /alert %}}
 
 ### Synopsis
 

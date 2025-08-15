@@ -1,5 +1,5 @@
 ---
-title: "Notas de IA"
+title: "Centro de Notas de IA"
 #weight: 40
 ##menu: {main: {weight: 40}}
 description: "Una colección de prompts, técnicas y conocimientos para interactuar con y aprovechar modelos de IA."
@@ -9,8 +9,6 @@ tags: ["inteligencia-artificial", "prompts", "ia-generativa", "documentación", 
 cascade:
   - type: "docs"
 ---
-
-# Centro de Notas de IA
 
 Bienvenido a mi colección de notas y técnicas relacionadas con IA.
 
