@@ -3,7 +3,7 @@ title: "Directorios de medios removibles"
 #Removable Media: /media, /run, and /mnt"
 titleLink: "removable-media-directories"
 description: "Uso de directorios para medios removibles y montaje temporal."
-tags: ["/media", "/mnt", "/run", "mount", "LFCS"]
+tags: ["FHS-linux", "mount", "LFCS"]
 categories: ["Storage"]
 ---
 

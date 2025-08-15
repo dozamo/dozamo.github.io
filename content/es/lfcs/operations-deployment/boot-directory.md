@@ -2,7 +2,7 @@
 title: "El directorio /boot"
 titleLink: "boot-directory"
 description: "Uso del directorio /boot en Linux."
-tags: ["/boot", "bootloader", "kernel", "LFCS"]
+tags: ["FHS-linux", "bootloader", "kernel", "LFCS"]
 categories: ["Operations Deployment"]
 ---
 

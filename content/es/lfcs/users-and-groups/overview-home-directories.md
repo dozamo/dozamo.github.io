@@ -2,7 +2,7 @@
 title: "Directorio de inicio del usuario"
 titleLink: "overview-home-directories"
 description: "Descripción general de los directorios home de los usuarios en Linux."
-tags: ["home-directory", "users", "permissions", "LFCS"]
+tags: ["FHS-linux", "users", "permissions", "LFCS"]
 categories: ["Users and Groups"]
 ---
 

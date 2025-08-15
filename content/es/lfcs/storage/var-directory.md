@@ -2,7 +2,7 @@
 title: "El /var"
 titleLink: "var-directory"
 description: "Propósito del directorio /var en Linux."
-tags: ["/var", "logs", "LFCS"]
+tags: ["FHS-linux", "logs", "LFCS"]
 categories: ["Storage"]
 ---
 

@@ -2,7 +2,7 @@
 title: "Filesystem /proc"
 titleLink: "proc-filesystem"
 description: "Uso del sistema de archivos virtual /proc en Linux."
-tags: ["/proc", "virtual-filesystem", "processes", "LFCS"]
+tags: ["FHS-linux", "virtual-filesystem", "processes", "LFCS"]
 categories: ["Essential Commands"]
 ---
 

@@ -3,7 +3,7 @@ title: "Dirs. adicionales bajo /"
 #: /opt, /sys, /srv, /tmp, /usr"
 titleLink: "additional-root-directories"
 description: "Descripción de directorios adicionales del sistema Linux."
-tags: ["/opt", "/sys", "/srv", "/tmp", "/usr", "LFCS"]
+tags: ["FHS-linux", "LFCS"]
 categories: ["Essential Commands"]
 ---
 
