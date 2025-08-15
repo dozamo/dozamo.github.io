@@ -9,11 +9,13 @@ weight: 170
 
 El comando `mount` en Linux se utiliza para montar sistemas de archivos y hacerlos accesibles a través de un punto de montaje en el árbol de directorios.
 
+## mount
+
 {{% alert %}}
 `mount` — Monta un sistema de archivos en un punto de montaje.
 {{% /alert %}}
 
-## Synopsis
+### Synopsis
 
 ```bash
 mount [-t tipo] dispositivo directorio
@@ -21,7 +23,7 @@ mount [-o opciones] dispositivo directorio
 mount [-a]
 ```
 
-## Opciones comunes
+### Opciones comunes
 
 - `-t tipo` — Especifica el tipo de sistema de archivos (ext4, xfs, nfs, etc.).
 - `-o opciones` — Monta con opciones específicas como `ro` (solo lectura), `rw` (lectura/escritura), `noexec`, `nosuid`, etc.

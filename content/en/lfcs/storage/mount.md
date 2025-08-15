@@ -9,11 +9,13 @@ weight: 170
 
 The `mount` command in Linux is used to attach file systems and make them accessible through a mount point in the directory tree.
 
+## mount
+
 {{% alert %}}
 `mount` — Mounts a file system to a mount point.
 {{% /alert %}}
 
-## Synopsis
+### Synopsis
 
 ```bash
 mount [-t type] device directory
@@ -21,8 +23,7 @@ mount [-o options] device directory
 mount [-a]
 ```
 
-
-**Common options:**
+### Common options
 
 - `-t type` — Specifies the file system type (ext4, xfs, nfs, etc.).
 - `-o options` — Mounts with specific options such as `ro` (read-only), `rw` (read/write), `noexec`, `nosuid`, etc.

@@ -1,5 +1,5 @@
 ---
-title: "Introducción a NFS y Sistemas de Archivos de Red"
+title: "Introducción a NFS (Sistemas Archivos en Red)"
 titleLink: "intro-nfs"
 description: "Conceptos básicos de NFS y otros sistemas de archivos de red en Linux."
 tags: ["nfs", "network-filesystem", "linux", "storage", "LFCS"]
