@@ -9,6 +9,9 @@ weight: 150
 
 En Linux, el sistema de archivos organiza y gestiona cómo se almacenan y recuperan los datos. Cada archivo y directorio se ubica en una jerarquía única, comenzando en `/`.
 
+<img src="/images/lfcs/filesystem_partitions_mount-points.png" alt="Filesystems | partitions | mount points" class="img-fluid rounded shadow-lg">
+<small class="d-block mt-2">Filesystems | partitions | mount points.</small>
+
 ## Variedades de sistemas de archivos
 
 - **ext4** — Estándar en la mayoría de distribuciones modernas.

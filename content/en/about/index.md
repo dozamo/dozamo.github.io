@@ -24,8 +24,8 @@ IT Notes serves as my personal digital repository for practical solutions, in-de
     <h2 class="text-center text-md-start">What You'll Find Here</h2>
     <p>This site focuses on clear, actionable content for IT professionals and enthusiasts. Expect to find:</p>
     <ul>
-      <li><strong>Step-by-Step Tutorials:</strong> Detailed walkthroughs for setting up and managing systems, like the guide on <a href="/docs/lfcs/lab-setup/kvm-provision-centos/">provisioning a CentOS VM with KVM</a>.</li>
-      <li><strong>In-Depth Command References:</strong> Comprehensive breakdowns of essential tools, such as the deep dive into the <a href="/docs/lfcs/operations-deployment/umask/">umask command</a>.</li>
+      <li><strong>Step-by-Step Tutorials:</strong> Detailed walkthroughs for setting up and managing systems, like the guide on <a href="/lfcs/lab-setup/kvm-provision-centos/">provisioning a CentOS VM with KVM</a>.</li>
+      <li><strong>In-Depth Command References:</strong> Comprehensive breakdowns of essential tools, such as the deep dive into the <a href="/lfcs/operations-deployment/umask/">umask command</a>.</li>
       <li><strong>Certification Study Notes:</strong> Curated materials aimed at specific certifications, with a current focus on the Linux Foundation Certified SysAdmin (LFCS).</li>
       <li><strong>Practical Snippets:</strong> Ready-to-use configurations and command-line examples to solve common problems.</li>
     </ul>
