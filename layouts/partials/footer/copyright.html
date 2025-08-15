@@ -1,0 +1,44 @@
+{{ $page := .Page -}}
+{{ with .Site.Params.copyright -}}
+  {{ $fromYear := "" -}}
+  {{ $toYear := "" -}}
+  {{ $authors := "" -}}
+  {{ if reflect.IsMap . -}}
+    {{ $fromYear = .from_year -}}
+    {{ $toYear = .to_year -}}
+    {{ $authors = .authors -}}
+  {{ else -}}
+    {{ $authors = . -}}
+  {{ end -}}
+
+  <span class="td-footer__copyright">&copy;
+    {{ with $fromYear -}}
+      {{ . }}&ndash;
+    {{- end -}}
+    {{ $toYear | default now.Year }}
+    <span class="td-footer__authors">
+      {{- $authors
+            | default (printf "%s Authors" ($.Site.Title | default "Site"))
+       -}} 
+    </span>
+    <br>
+    <small>Site generated with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>  and the <a href="https://www.docsy.dev/" target="_blank" rel="noopener">Docsy</a> theme.</small>
+    {{- /* Trim WS */ -}}
+  </span>
+
+  {{- with T "footer_all_rights_reserved" -}}
+    <span class="td-footer__all_rights_reserved">
+      {{- . -}}
+    </span>
+  {{- end }}
+
+{{- else -}}
+
+  {{ with .Site.Copyright -}}
+    {{/* For historical reasons we process this as HTML rather than markdown. */ -}}
+    <span class="td-footer__copyright">
+      {{- . | safeHTML -}}
+    </span>
+  {{- end -}}
+
+{{ end -}}

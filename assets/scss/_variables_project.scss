@@ -1,0 +1,27 @@
+/*
+Projects can override this file. For details, see:
+https://www.docsy.dev/docs/adding-content/lookandfeel/#project-style-files
+*/
+// =============================================================================
+// CUSTOM COLOR VARIABLES FOR IT NOTES
+// =============================================================================
+
+// Links on cyan/light backgrounds
+$link-cyan-base: #0d47a1;        // Dark blue for good contrast on cyan
+$link-cyan-hover: #1565c0;       // Slightly lighter blue for hover
+
+// Links on dark backgrounds  
+$link-dark-base: #64b5f6;        // Light blue for contrast on dark
+$link-dark-hover: #90caf9;       // Brighter blue for hover
+
+// Text decoration
+$link-underline-thickness: 1px;
+
+// =============================================================================
+// OPTIONAL: OVERRIDE DOCSY DEFAULT VARIABLES
+// =============================================================================
+
+// Uncomment and modify these if you want to override Docsy's defaults:
+// $primary: #your-color;
+// $secondary: #your-color;
+// $link-color: $link-cyan-base;

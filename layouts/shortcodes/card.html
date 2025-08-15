@@ -1,0 +1,38 @@
+<!-- layouts/shortcodes/card.html -->
+<style>
+  .card-item {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid var(--bs-border-color);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    height: 100%;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    background-color: var(--bs-body-bg);
+  }
+  .card-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  .card-item__icon {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .card-item__title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--bs-body-color);
+    margin-bottom: 0.5rem;
+  }
+  .card-item__description {
+    font-size: 0.9rem;
+    color: var(--bs-secondary-color);
+  }
+</style>
+<a href="{{ .Get "link" | relURL }}" class="card-item">
+  <div class="card-item__icon">{{ .Get "icon" }}</div>
+  <div class="card-item__title">{{ .Get "title" }}</div>
+  <div class="card-item__description">{{ .Get "description" | markdownify }}</div>
+</a>

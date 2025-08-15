@@ -1,0 +1,64 @@
+# .github/workflows/deploy.yml
+name: Deploy Hugo site to Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+# Permisos especiales que el workflow necesita para el despliegue moderno
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          submodules: true # Necesario para temas que usan submodules
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: npm install postcss postcss-cli autoprefixer
+
+      - name: Build with Hugo
+        # Construye el sitio usando la baseurl correcta que nos da GitHub
+        run: hugo --baseURL "${{ steps.pages.outputs.base_path }}/"
+
+      - name: Upload artifact
+        # Empaqueta el sitio construido (la carpeta 'public') para el despliegue
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  deploy:
+    # Este job depende del anterior
+    needs: build
+    # Configuración del entorno de despliegue
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

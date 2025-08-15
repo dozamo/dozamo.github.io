@@ -1,0 +1,31 @@
+/*
+Nothing defined here. The Hugo project that uses this theme can override Bootstrap by adding a file to:
+assets/scss/_styles_project.scss
+*/
+
+// =============================================================================
+// CUSTOM STYLES FOR IT NOTES
+// =============================================================================
+
+// Custom link styles for cyan/light sections
+.td-box--cyan a {
+  color: $link-cyan-base;
+  text-decoration: underline;
+  text-decoration-thickness: $link-underline-thickness;
+
+  &:hover {
+    color: $link-cyan-hover;
+    text-decoration: none; // Remove underline on hover
+  }
+}
+
+// Custom link styles for dark sections
+.td-box--dark a {
+  color: $link-dark-base;
+  text-decoration: underline;
+  text-decoration-thickness: $link-underline-thickness;
+
+  &:hover {
+    color: $link-dark-hover;
+  }
+}

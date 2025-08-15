@@ -1,0 +1,44 @@
+# My
+/dz_*
+*.v-*
+/*.org
+/docsy-example
+/docs.*
+*.zip
+*.org*
+
+# Hugo build output
+/public/
+/resources/_gen/
+/hugo_stats.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node dependencies
+/node_modules/
+/package-lock.json
+yarn.lock
+.pnpm-debug.log
+
+# Go modules cache
+/go.sum
+/go.work
+/go.work.sum
+
+# Local env
+.env
+.env.*
+
+# VSCode settings
+.vscode/
+.history/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
