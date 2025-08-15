@@ -1,5 +1,5 @@
 ---
-title: "El directorio /dev"
+title: "El /dev"
 titleLink: "dev-directory"
 description: "Descripción y uso del directorio /dev en Linux."
 tags: ["/dev", "device-files", "LFCS"]
