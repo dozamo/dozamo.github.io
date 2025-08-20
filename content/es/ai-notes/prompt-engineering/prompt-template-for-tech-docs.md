@@ -21,11 +21,12 @@ Actúa como un experto en Linux y DevOps, especializado en crear contenido técn
 El artículo debe cubrir el siguiente tema: [Insertar Comando o Tema Tecnológico Aquí]
 
 Requisitos del Contenido:
-1.  **Formato:** Markdown estricto. Debe incluir una sección de front matter de Hugo al inicio con 'title', 'description', y 'weight'.
+1.  **Formato:** Markdown estricto. Debe incluir una sección de front matter de Hugo para el theme Docsy al inicio con 'title', 'description', 'weight', 'tags', y 'categories'.
 2.  **Enfoque:** El contenido debe ser conciso, práctico, y enfocarse exclusivamente en los aspectos más relevantes para un examen de certificación como el LFCS (Linux Foundation Certified Sysadmin). Evita detalles excesivamente esotéricos.
 3.  **Estructura:** Organiza el artículo con encabezados claros. Explica la sintaxis básica y luego las sub-operaciones más importantes con ejemplos.
 4.  **Ejemplos:** Incluye ejemplos de código claros y breves dentro de bloques de código bash (```bash).
 5.  **Idioma:** La salida final debe estar en [Idioma Deseado].
+6. 
 
 Asegúrate de que toda la salida final esté envuelta en un solo bloque de código delimitado (```markdown) para evitar problemas de formateo al copiar y pegar.
 ```
