@@ -1,14 +1,12 @@
 ---
 title: "El directorio /boot"
-titleLink: "boot-directory"
+titleLink: "Directorio /boot"
 description: "Uso del directorio /boot en Linux."
 tags: ["FHS-linux", "bootloader", "kernel", "LFCS"]
 categories: ["Operations Deployment"]
 ---
 
-{{% alert="/boot" %}}
-  `/boot` contiene los archivos necesarios para iniciar el sistema
-{{% /alert %}}
+El directorio `/boot` contiene los archivos necesarios para iniciar el sistema
 
 En este directorio se encuentran los archivos:
 - Kernel (`vmlinuz`)

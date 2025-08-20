@@ -1,0 +1,155 @@
+# ./hugo.toml
+baseURL = "https://dozamo.github.io/"
+title = "mydocs"
+theme = ["github.com/google/docsy"]
+
+# --- Ajustes para URLs ---
+canonifyURLs = true
+relativeURLs = false
+
+# Language settings
+contentDir = "content/en"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+enableMissingTranslationPlaceholders = true
+
+enableRobotsTXT = true
+enableGitInfo = true
+
+# 🎯 SOLUCIÓN: Deshabilitar taxonomías completamente
+disableKinds = ["taxonomy"]
+
+# Highlighting config
+pygmentsCodeFences = true
+pygmentsUseClasses = false
+pygmentsUseClassic = false
+pygmentsStyle = "tango"
+
+# Image processing configuration
+[imaging]
+resampleFilter = "CatmullRom"
+quality = 75
+anchor = "smart"
+
+# Markup configuration
+[markup.goldmark.parser.attribute]
+block = true
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+style = "tango"
+guessSyntax = true
+
+# Permalinks
+[permalinks]
+blog = "/:section/:year/:month/:day/:slug/"
+
+# Front matter configuration
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+
+# Output formats
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+section = ["HTML", "RSS"]
+
+# Language configuration
+[languages.en]
+languageName = "English"
+title = "mydocs"
+weight = 1
+contentDir = "content/en"
+
+[languages.en.params]
+description = "My personal notes site"
+
+[languages.es]
+languageName = "Español"
+title = "mis docs"
+weight = 2
+contentDir = "content/es"
+
+[languages.es.params]
+description = "Mi sitio de notas personales"
+
+# Parameters
+[params]
+description = "My site personal notes"
+version_menu = "Releases"
+archived_version = false
+version = "0.0"
+prism_syntax_highlighting = false
+copyright = "dz | All rights reserved"
+offlineSearch = true
+
+# 🎯 Configuración de taxonomía (opcional si usas disableKinds)
+[params.taxonomy]
+taxonomyCloud = []
+taxonomyCloudTitle = []
+taxonomyPageHeader = []
+
+# Language alternatives
+[[params.language_alternatives]]
+languageName = "English"
+languageCode = "en"
+
+[[params.language_alternatives]]
+languageName = "Español"
+languageCode = "es"
+
+# UI Configuration
+[params.ui]
+breadcrumb_disable = false
+navbar_logo = true
+navbar_search_disable = true
+sidebar_search_disable = false
+navbar_disable_title = true
+navbar_translucent_over_cover_disable = false
+sidebar_menu_compact = true
+
+[params.ui.feedback]
+enable = false
+yes = 'Glad to hear it! Please <a href="https://github.com/dozamo/dozamo.github.com/issues/new">tell us how we can improve</a>.'
+no = 'Sorry to hear that. Please <a href="https://github.com/dozamo/dozamo.github.com/issues/new">tell us how we can improve</a>.'
+
+[params.ui.readingtime]
+enable = false
+
+# Links
+[[params.links.developer]]
+name = "GitHub dozamo"
+url = "https://github.com/dozamo/"
+icon = "fab fa-github"
+desc = "dz"
+
+# Module configuration
+[module]
+[module.hugoVersion]
+extended = true
+min = "0.146.0"
+
+[[module.imports]]
+path = "github.com/google/docsy"
+disable = false
+
+# Menu configuration
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 20
+pre = "<i class='fas fa-book'></i>"
+
+[[menu.main]]
+name = "LFCS Notes"
+url = "/lfcs/"
+weight = 40
+pre = "<i class='fa-brands fa-linux'></i>"
+
+[[menu.main]]
+name = "AI Notes"
+url = "/ai-notes/"
+weight = 50
+pre = "<i class='fa-solid fa-brain'></i>"
+

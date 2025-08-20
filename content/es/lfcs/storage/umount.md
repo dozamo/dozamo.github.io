@@ -1,6 +1,6 @@
 ---
 title: "Comando umount"
-titleLink: "umount"
+# titleLink: "umount"
 description: "Guía para desmontar sistemas de archivos en Linux usando el comando umount."
 tags: ["umount", "filesystem", "storage", "linux-cli", "LFCS"]
 categories: ["Storage"]
@@ -9,7 +9,7 @@ weight: 173
 
 El comando `umount` en Linux se utiliza para desmontar sistemas de archivos, desconectándolos del punto de montaje.
 
-## umount
+### Nombre — objetivo 
 
 {{% alert %}}
 `umount` — Desmonta un sistema de archivos.
@@ -26,7 +26,7 @@ El comando `umount` en Linux se utiliza para desmontar sistemas de archivos, des
 - `-f` — Forzar el desmontaje, útil cuando un recurso de red no responde.
 - `-r` — Remonta el sistema como solo lectura si no se puede desmontar normalmente.
 
-## Casos de uso
+### Casos de uso
 
 1. Desmontar un USB montado en `/mnt/usb`:
    ```bash
@@ -45,7 +45,15 @@ El comando `umount` en Linux se utiliza para desmontar sistemas de archivos, des
   sudo umount -l /mnt/nfs
   ```
 
-## Buenas prácticas
+### Archivos relacionados
+
+- `/etc/fstab` - Tabla de sistemas de archivos para montaje automático.
+- `/etc/mtab` - Lista de sistemas actualmente montados.
+- `/proc/mounts` - Información del kernel sobre los montajes activos.
+- `/proc/self/mountinfo` - Tabla de filesystem montados generados por el kernel.
+
+
+### Buenas prácticas
 
 - Siempre asegurarse de que no existan procesos usando el punto de montaje (`lsof` o `fuser` pueden ayudar).
 - Evitar extraer físicamente un dispositivo sin desmontarlo para prevenir corrupción de datos.

@@ -18,12 +18,12 @@ Aquí encontrarás una colección curada de plantillas reutilizables, desde prom
   {{< card
       title="Prompt 001 - TechDoc Individual"
       description="Aprende la plantilla fundamental para generar un artículo técnico único y completo sobre un tema específico. Ideal para documentación en profundidad."
-      link="/mydocs/es/ai-notes/prompt-engineering/prompt-template-for-tech-docs"
+      link="/es/ai-notes/prompt-engineering/prompt-template-for-tech-docs"
       icon="🎯" >}}
   {{< card
       title="Prompt 002 - Plantilla TechDoc temas múltiples"
       description="Evoluciona hacia un prompt de pipeline avanzado que instruye a la IA para generar múltiples artículos separados a partir de una lista de temas en una sola ejecución."
-      link="/mydocs/es/ai-notes/prompt-engineering/prompt-template-multiples-topic-individual"
+      link="/es/ai-notes/prompt-engineering/prompt-template-multiples-topic-individual"
       icon="⚙️" >}}
 {{< /cards >}}
 

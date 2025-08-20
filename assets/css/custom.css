@@ -1,0 +1,30 @@
+/* Ocultar taxonomías del contenido principal 
+.td-content .taxonomy,
+.td-content .tags,
+.td-content .categories,
+[class*="taxonomy"],
+[class*="tag-"],
+[class*="category-"] {
+    display: none !important;
+}
+*/
+
+/* Ocultar la sección específica donde aparecen Categories y Tags
+.td-content p:has-text("Categories:"),
+.td-content p:has-text("Tags:") {
+    display: none !important;
+}
+*/
+
+/* Selector más específico para el contenido que viste en la captura
+.td-content > p:nth-of-type(2) {
+    display: none !important;
+}
+*/
+
+/* Si las taxonomías están en un div específico
+div:contains("Categories:"),
+div:contains("Tags:") {
+    display: none !important;
+}
+*/

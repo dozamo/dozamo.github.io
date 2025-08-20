@@ -16,23 +16,39 @@ Este artículo documenta un prompt de "pipeline" avanzado. El objetivo es propor
 Aquí está la plantilla completa. Funciona dándole a la IA una lista de temas y una sub-plantilla para usar en cada uno.
 
 ```markdown
-Actúa como un pipeline de generación de contenido. Tu tarea es tomar la siguiente lista de temas y, para cada tema, generar un artículo de documentación completo e individual en formato Markdown estricto.
+Actúa como un pipeline de generación de contenido experto en Linux y DevOps con certificación LFCS de la Linux Foundation, especializado en crear contenido técnico para el estudio de la certificación LFCS. Tu tarea es generar un artículo de documentación en formato Markdown estricto, optimizado para Hugo+Docsy. Tu tarea es tomar la siguiente lista de temas y, para cada tema, generar un artículo de documentación completo e individual en formato Markdown estricto, optimizado para ser agregado al sitio de Hugo theme Docsy.
+
+Requisitos del Contenido:
+1.  **Formato:** Markdown estricto. Debe incluir una sección de front matter de Hugo para el theme Docsy al inicio con 'title', 'description', 'weight', 'tags', y 'categories'.
+1.1 **categories:** Considerando que las cinco dominios y competencias de la LCFS son: Implementación de Operaciones; Networking; Almacenamiento; Comandos Esenciales y  Usuarios y Grupos, asignales la que sén el tema corresponda, si ademas consideras que puede pertenecer a otra categoría también la agregas.
+1.2 **tags:** Asigna al menos un valor para este atributo, que sea relacionado al contexto de la tecnología IT relacionada.
+2.  **Enfoque:** El contenido debe ser conciso, práctico, y enfocarse exclusivamente en los aspectos más relevantes para un examen de certificación como el LFCS (Linux Foundation Certified Sysadmin). Evita detalles excesivamente esotéricos.
+3.  **Estructura:** Organiza el artículo con encabezados claros. Explica la sintaxis básica y luego las sub-operaciones más importantes con ejemplos.
+4.  **Ejemplos:** Incluye ejemplos de código claros y breves dentro de bloques de código bash (```bash).
+5.  **Idioma:** La salida final debe estar en [Idioma Deseado].
+
+Asegúrate de que toda la salida final esté envuelta en un solo bloque de código delimitado (```markdown) para evitar problemas de formateo al copiar y pegar.
 
 **Lista de Temas:**
-- crontab
-- at
-- telinit
-- systemctl resource limits
+- comando ip
+- comando nmcli
+- comando ifconfig
+- Configuración de red en distribuciones linux basadas en RHEL 8 o superior
+- Configuración de red en distribuciones linux Debian (/etc/networking/interfaces)
+- Configuración de red en distribuciones Linux Ubuntu (/etc/netplan)
+- Configuración de red en distribuciones linux basadas en RHEL 7 o anteriores
 
 **Plantilla de Artículo a usar para CADA tema:**
 """
 ---
-title: "Gestionando [TÍTULO_DEL_TEMA_AQUÍ]"
+title: "[TÍTULO_DEL_TEMA_AQUÍ]"
 description: "Una guía práctica para usar el comando [TÍTULO_DEL_TEMA_AQUÍ] para programación de tareas y gestión del sistema."
 weight: [UN_NÚMERO_ÚNICO_AQUÍ]
+categories: ["CATEGORIA1", "CATEGORIA2", ...]
+tags: ["TAGS_REFERENCIA_RELACIONADO", "TAGS2_REFERENCIA_RELACIONADO", ...]
 ---
 
-(Genera un artículo conciso pero completo sobre [TÍTULO_DEL_TEMA_AQUÍ] aquí, siguiendo la estructura y enfoque de una guía de certificación técnica. Incluye sintaxis, casos de uso comunes, y ejemplos claros.)
+(Genera un artículo conciso pero completo sobre [TÍTULO_DEL_TEMA_AQUÍ] aquí, basado en esta plantilla, siguiendo la estructura y enfoque de una guía de certificación técnica. Incluye sintaxis, casos de uso comunes, y ejemplos claros.)
 """
 
 **Instrucciones:**
@@ -53,6 +69,7 @@ Hemos cambiado la persona de un simple "experto" a un "pipeline". Esto enmarca l
 
 {{% alert title="2. Proporcionando Datos Claros y una Plantilla" color="info" %}}
 En lugar de un solo tema, proporcionamos dos entradas distintas:
+
 - Una **Lista de Temas**: Los datos que el pipeline procesará.
 - Una **Plantilla de Artículo**: El "molde" que se usará para cada pieza de datos. Esto nos da un control increíble sobre la estructura final de cada artículo.
 {{% /alert %}}

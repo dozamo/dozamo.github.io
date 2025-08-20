@@ -16,12 +16,12 @@ Here you will find a curated collection of reusable templates, from foundational
   {{< card
       title="Prompt 001 - Single TechDoc"
       description="Learn the foundational template for generating a single, complete technical article on a specific topic. Ideal for in-depth documentation."
-      link="/mydocs/docs/ai-notes/prompt-engineering/prompt-template-for-tech-docs"
+      link="/ai-notes/prompt-engineering/prompt-template-for-tech-docs"
       icon="🎯" >}}
   {{< card
       title="Prompt 002 - Tpl TechDoc topic multiples"
       description="Evolve to an advanced pipeline prompt that instructs the AI to generate multiple, separate articles from a list of topics in a single run."
-      link="/mydocs/docs/ai-notes/prompt-engineering/prompt-template-multiples-topic-individual"
+      link="/ai-notes/prompt-engineering/prompt-template-multiples-topic-individual"
       icon="⚙️" >}}
 {{< /cards >}}
 

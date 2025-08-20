@@ -16,17 +16,18 @@ Este artículo documenta el "prompt maestro" fundamental para generar un artícu
 Aquí está la plantilla completa. Está diseñada para ser alimentada directamente a un modelo de IA para producir un artículo técnico estructurado, enfocado y correctamente formateado.
 
 ```markdown
-Actúa como un experto en Linux y DevOps, especializado en crear contenido técnico para certificaciones. Tu tarea es generar un artículo de documentación en formato Markdown estricto, optimizado para Hugo+Docsy.
+Actúa como un experto en Linux y DevOps con certificación LFCS de la Linux Foundation, especializado en crear contenido técnico para certificaciones. Tu tarea es generar un artículo de documentación en formato Markdown estricto, optimizado para Hugo+Docsy.
 
 El artículo debe cubrir el siguiente tema: [Insertar Comando o Tema Tecnológico Aquí]
 
 Requisitos del Contenido:
 1.  **Formato:** Markdown estricto. Debe incluir una sección de front matter de Hugo para el theme Docsy al inicio con 'title', 'description', 'weight', 'tags', y 'categories'.
+1.1 **categories:** Considerando que las cinco dominios y competencias de la LCFS son: Implementación de Operaciones; Networking; Almacenamiento; Comandos Esenciales y  Usuarios y Grupos, asignales la que sén el tema corresponda, si ademas consideras que puede pertenecer a otra categoría también la agregas.
+1.2 **tags:** Asigna al menos un valor para este atributo, que sea relacionado al contexto de la tecnología IT relacionada.
 2.  **Enfoque:** El contenido debe ser conciso, práctico, y enfocarse exclusivamente en los aspectos más relevantes para un examen de certificación como el LFCS (Linux Foundation Certified Sysadmin). Evita detalles excesivamente esotéricos.
 3.  **Estructura:** Organiza el artículo con encabezados claros. Explica la sintaxis básica y luego las sub-operaciones más importantes con ejemplos.
 4.  **Ejemplos:** Incluye ejemplos de código claros y breves dentro de bloques de código bash (```bash).
 5.  **Idioma:** La salida final debe estar en [Idioma Deseado].
-6. 
 
 Asegúrate de que toda la salida final esté envuelta en un solo bloque de código delimitado (```markdown) para evitar problemas de formateo al copiar y pegar.
 ```

@@ -1,6 +1,6 @@
 ---
 title: "Comando mount"
-titleLink: "mount"
+#titleLink: "mount"
 description: "Guía práctica para utilizar el comando mount en Linux para montar sistemas de archivos."
 tags: ["mount", "filesystem", "storage", "linux-cli", "LFCS"]
 categories: ["Storage"]
@@ -9,7 +9,7 @@ weight: 170
 
 El comando `mount` en Linux se utiliza para montar sistemas de archivos y hacerlos accesibles a través de un punto de montaje en el árbol de directorios.
 
-## mount
+### Nombre
 
 {{% alert %}}
 `mount` — Monta un sistema de archivos en un punto de montaje.
@@ -29,7 +29,7 @@ mount [-a]
 - `-o opciones` — Monta con opciones específicas como `ro` (solo lectura), `rw` (lectura/escritura), `noexec`, `nosuid`, etc.
 - `-a` — Monta todos los sistemas de archivos definidos en `/etc/fstab`.
 
-## Casos de uso
+### Casos de uso
 
 1. Montar un dispositivo USB en `/mnt/usb`:
    
@@ -48,8 +48,8 @@ mount [-a]
    ```bash
    sudo mount -a
    ```
-
-## Archivos relacionados
+   
+### Archivos relacionados
 
 - `/etc/fstab` - Tabla de sistemas de archivos para montaje automático.
 - `/etc/mtab` - Lista de sistemas actualmente montados.

@@ -39,12 +39,12 @@ enableRobotsTXT: true
 enableGitInfo: true
 
 # Comment out to disable taxonomies in Docsy
-disableKinds: [taxonomy]
+# disableKinds: [taxonomy]
 
 # You can add your own taxonomies
-#taxonomies:
-#  tag: tags
-#  category: categories
+#> taxonomies:
+#>   tag: tags
+#>   category: categories
 
 # Highlighting config
 pygmentsCodeFences: true
@@ -88,8 +88,6 @@ outputs:
   section: [HTML, RSS]
 
 params:
-  # Incluir CSS personalizado
-  custom_css: ["css/custom.css"]
   # =================== BLOQUE DE PARÁMETROS UNIFICADO ===================
   description: My site personal notes
 
@@ -101,12 +99,15 @@ params:
       languageCode: es
 
   taxonomy:
+    # Mantener nubes en sidebar si quieres
     # set taxonomyCloud = [] to hide taxonomy clouds
-    taxonomyCloud: []
+    taxonomyCloud: [tags, categories]
     # If used, must have same length as taxonomyCloud
-    taxonomyCloudTitle: []
+    taxonomyCloudTitle: [Tag Cloud, Categories]
+    # Deshabilitar en headers de páginas (contenido principal)
     # set taxonomyPageHeader = [] to hide taxonomies on the page headers
-    taxonomyPageHeader: []
+    #> taxonomyPageHeader: [tags, categories]
+    taxonomyPageHeader: [] # <-- Esto oculta tags/categories del contenido de las páginas
 
   #> privacy_policy: https://policies.google.com/privacy
 

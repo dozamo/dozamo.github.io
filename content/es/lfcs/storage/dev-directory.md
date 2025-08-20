@@ -1,6 +1,5 @@
 ---
-title: "El /dev"
-titleLink: "dev-directory"
+title: "El directorio /dev"
 description: "Descripción y uso del directorio /dev en Linux."
 tags: ["FHS-linux", "device-files", "LFCS"]
 categories: ["Storage"]
