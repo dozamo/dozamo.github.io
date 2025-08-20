@@ -1,9 +1,9 @@
 ---
-title: Networking
+title: "2. Networking - 25%"
 description: >
   Se centra en la configuración, seguridad y solución de problemas de servicios de red, desde el direccionamiento IP y SSH hasta firewalls y enrutamiento de tráfico avanzado.
-date: 2017-01-04
-weight: 3
+# date: 2017-01-04
+weight: 30
 categories: ["Networking", "Implementación de Operaciones", "Comandos Esenciales"]
 tags: ["networking", "linux", "sysadmin", "lfcs", "ipv4", "ipv6", "ssh", "firewall"]
 ---
