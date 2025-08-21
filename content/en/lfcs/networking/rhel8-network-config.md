@@ -1,5 +1,5 @@
 ---
-title: "Network Configuration on RHEL 8+"
+title: "Network config. on RHEL 8+"
 description: "Managing persistent network configuration on RHEL 8-based distributions (and newer) using NetworkManager, nmcli, and nmtui."
 weight: 40
 categories: ["Networking", "Operations Implementation"]

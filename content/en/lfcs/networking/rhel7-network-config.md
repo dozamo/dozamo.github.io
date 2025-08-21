@@ -1,5 +1,6 @@
 ---
-title: "Network Configuration on RHEL 7 and Older"
+titleLink: "Network config. on RHEL 7 and Older" 
+title: "Network config. on RHEL 7"
 description: "A guide to persistent network configuration on RHEL 7-based distributions (and older) using ifcfg files."
 weight: 70
 categories: ["Networking", "Operations Implementation"]

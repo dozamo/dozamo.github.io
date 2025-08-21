@@ -24,11 +24,11 @@ Among other topics on this site, you'll find my personal and evolving knowledge 
 
 
 {{% blocks/section color="dark" type="row" %}}
-{{% blocks/feature icon="fa-computer" title="LFCS - Operations Deployment - 25%" url="/mydocs/lfcs/operations-deployment" %}}
+{{% blocks/feature icon="fa-computer" title="LFCS - Operations Deployment - 25%" url="/lfcs/operations-deployment" %}}
 Mastering the day-to-day administration and maintenance of a live Linux system, ensuring stability, security, and performance.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-network-wired" title="LFCS -  Networking - 25%" url="/mydocs/lfcs/networking" %}}
+{{% blocks/feature icon="fa-network-wired" title="LFCS -  Networking - 25%" url="/lfcs/networking" %}}
 Covers IPv4/IPv6 configuration, SSH, packet filtering, NAT, static routing, and advanced network device management.
 {{% /blocks/feature %}}
 

@@ -1,5 +1,6 @@
 ---
-title: "Configuración de Red en Debian (/etc/network/interfaces)"
+title: "Configuración de Red en Debian (y Ubuntu < 17.10)"
+titleLink: "Configuración de Red en Debian (y Ubuntu < 17.10) - /etc/network/interfaces"
 description: "Una guía práctica para la configuración de red persistente en Debian y derivados usando el archivo /etc/network/interfaces y el paquete ifupdown."
 weight: 50
 categories: ["Networking", "Implementación de Operaciones"]
