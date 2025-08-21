@@ -3,7 +3,7 @@ title: "Configuración de Red en RHEL 7 y Anteriores"
 description: "Guía para la configuración de red persistente en distribuciones basadas en RHEL 7 (y anteriores) utilizando los archivos ifcfg."
 weight: 70
 categories: ["Networking", "Implementación de Operaciones"]
-tags: ["networking", "rhel", "centos", "ifcfg", "sysconfig", "legacy"]
+tags: ["rhel y derivados", "ifcfg", "sysconfig", "legacy"]
 ---
 
 En Red Hat Enterprise Linux (RHEL) 7, CentOS 7 y versiones anteriores, el método tradicional para la configuración de red persistente es mediante la edición de archivos de script en el directorio `/etc/sysconfig/network-scripts/`.
