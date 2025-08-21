@@ -46,7 +46,7 @@ Skills to securely manage user access and system resources, both on individual s
 
 {{% /blocks/section %}}
 
-
+<!-- 
 {{% blocks/section %}}
 This is the second section
 {.h1 .text-center}
@@ -76,4 +76,5 @@ For announcement of latest features etc.
 {{% blocks/section %}}
 This is the another section
 {.h1 .text-center}
-{{% /blocks/section %}}
+{{% /blocks/section %}} 
+-->
