@@ -1,9 +1,10 @@
 ---
-title: Blog
-#menu: {main: {weight: 30}}
-draft: true
+title: "Blog"
+titleLink: "Blog"
+#menu:
+#  main:
+#    weight: 30 # Ajusta este número para ordenar en el menú principal
 ---
 
-This is the **blog** section. It has two categories: News and Releases.
+¡Bienvenido a mi blog! Aquí comparto casos de estudio, tutoriales y reflexiones sobre mi viaje en el mundo de la tecnología, la inteligencia artificial y el desarrollo de software.
 
-Files in these directories will be listed in reverse chronological order.

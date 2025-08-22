@@ -213,10 +213,10 @@ menu:
       url: "/about/"
       weight: 20
       pre: "<i class='fas fa-book'></i>"
-    #> - name: "Blog"
-    #>   url: "/blog/"
-    #>   weight: 30
-    #>   pre: "<i class='fas fa-blog'></i>"
+    - name: "Blog"
+      url: "/blog/"
+      weight: 30
+      pre: "<i class='fas fa-blog'></i>"
     - name: "LFCS Notes"
       url: "/lfcs/"
       weight: 40

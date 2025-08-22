@@ -10,9 +10,7 @@ Colección personal de guías, comandos y recursos de estudio.
 <a class="btn btn-lg btn-primary me-3 mb-4" href="/lfcs">
   Mi estudio de LFCS <i class="fas fa-arrow-alt-circle-right ms-2"></i>
 </a>
-<br>
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="/ai-notes/prompt-engineering/">
-  <i class="fa-solid fa-brain"></i>
   apuntes de IA 
   <i class="fas fa-arrow-alt-circle-right ms-2"></i> 
 </a>

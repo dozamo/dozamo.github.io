@@ -9,9 +9,10 @@ A personal collection of guides, commands, and study resources.
 <a class="btn btn-lg btn-primary me-3 mb-4" href="/lfcs">
   My Documentation LFCS <i class="fas fa-arrow-alt-circle-right ms-2"></i>
 </a>
+
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="/ai-notes/prompt-engineering/">
-  <i class="fab fa-github ms-2 "></i>
   my AI Notes
+  <i class="fas fa-arrow-alt-circle-right ms-2"></i>
 </a>
 <p class="lead mt-5">To teach is to learn twice &mdash; Protégé Effect!</p>
 {{< blocks/link-down color="info" >}}
@@ -21,7 +22,6 @@ Linux Foundation Certified Sysadmin (LFCS)
 
 Among other topics on this site, you'll find my personal and evolving knowledge base for the [Linux Foundation Certified Sysadmin (LFCS)](https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/#exams) certification. This is a curated collection of notes, commands, and key concepts organized to aid my own studies and, hopefully, to help others on a similar journey. The content is a work in progress, compiled from various resources and my own hands-on practice.
 {{% /blocks/lead %}}
-
 
 {{% blocks/section color="dark" type="row" %}}
 {{% blocks/feature icon="fa-computer" title="LFCS - Operations Deployment - 25%" url="/lfcs/operations-deployment" %}}
