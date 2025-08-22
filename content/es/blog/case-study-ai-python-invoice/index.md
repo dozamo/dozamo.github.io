@@ -112,6 +112,80 @@ Con estos cambios, la aplicación debería funcionar como se espera.
 La primera respuesta de la IA fue prometedora y lógicamente correcta. Solucionó el problema del umbral de confianza de inmediato y propuso una solución estándar para el manejo de fechas multi-idioma. Sin embargo, como veremos, el entorno de ejecución a menudo guarda sorpresas.
 {{% /alert %}}
 
+---
+---
+> **Mi Segundo Prompt a la IA:**
+>
+> En tu rol de validador senior de aplicaciones IT basadas en Python, y con tu experticia en Document AI, tu tarea es validar y refactorizar la siguiente aplicación. Los problemas clave son:
+>
+> ...
+> 
+> <details>
+> <summary>Haz clic para ver el contexto completo del proyecto (código y logs)...</summary>
+>
+> ```bash
+> # ...
+> $ ..
+>
+> ```
+> ```python
+> # Fragmentos de código relevantes...
+> # ...
+> ```
+> ```bash
+> # Salida del Error
+> $ python main.py
+> ...
+> --- Resumen de Datos Clave ---
+>    - Receiver Name  : Andrés Piraquive
+>    - Receiver Phone : Not found or low confidence
+>    - Invoice Date   : Unparseable Date: '5 de Enero del 2030'
+>    - Invoice Id     : 0001234
+>    - Total Amount   : 31,467
+> ...
+> ```
+> </details>
+
+---
+
+{{% alert title="Respuesta del Asistente IA (Solución 2)" color="info" %}}
+
+¡Excelente! Asumo mi rol como validador senior. El diseño es modular y sólido. Has identificado dos puntos de mejora clave.
+
+#### Análisis de los Problemas
+
+1.  **...:** ....
+2.  **...:** ....
+
+#### Plan de Acción
+
+1.  **Refactorizar .....**.
+2.  **Actualizar ...**.
+
+<details>
+<summary>Ver los cambios de código propuestos...</summary>
+
+**1. `src/cli_invoice_processor/data_cleaner.py` (Modificado)**
+```python
+# ... (código modificado con la lógica de locale.setlocale)
+```
+
+**2. `src/cli_invoice_processor/config.py` (Modificado)**
+```python
+# 
+# ...
+```
+</details>
+
+...
+{{% /alert %}}
+
+---
+---
+
+
+
+
 ### Iteración 2 y 3: Refinando la Solución
 
 Apliqué los cambios, pero la fecha seguía fallando. Proporcioné a la IA más contexto sobre mi sistema operativo, lo que la llevó a proponer un "fallback" más robusto. Tras un pequeño error de sintaxis (`AttributeError`) que corregimos rápidamente, llegamos a una versión que no solo traducía los meses, sino que también limpiaba las preposiciones del español (`de`, `del`).
