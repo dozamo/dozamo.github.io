@@ -10,7 +10,7 @@ cascade:
   - type: "docs"
 ---
 
-Bienvenido a mi colección de notas y técnicas relacionadas con IA.
+🧠 ¡Bienvenido a mi colección de notas y técnicas relacionadas con IA!
 
 ## Qué Encontrarás Aquí
 

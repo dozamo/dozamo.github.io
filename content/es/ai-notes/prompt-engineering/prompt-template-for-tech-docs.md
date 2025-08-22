@@ -1,63 +1,61 @@
 ---
-title: "Una Plantilla para Generar un Artículo Técnico Individual"
+title: "Plantilla de Prompt para un Artículo Técnico Individual"
 linkTitle: "Prompt 001 - TechDoc Individual"
-description: "Una plantilla de prompt reutilizable y efectiva para generar un artículo técnico único y de alta calidad usando modelos de lenguaje de IA."
-weight: 10
+description: "Una plantilla de prompt reutilizable y robusta para generar un artículo técnico único y de alta calidad usando modelos de lenguaje de IA."
+weight: 100
 categories: ["ia", "tecnología"]
-tags: ["ingeniería-prompts", "plantilla-individual", "documentación-técnica", "llm", "hugo", "markdown", "lfcs", "automatización-contenido"]
+tags: ["ingeniería-prompts", "plantilla-individual", "documentación-técnica", "llm", "hugo", "markdown", "automatización-contenido"]
 ---
 
-Tener una plantilla de prompt bien diseñada es un superpoder cuando trabajas con Modelos de Lenguaje Grande (LLM) para generar contenido técnico. Asegura consistencia, refuerza estándares de calidad, y acelera dramáticamente el proceso de creación de contenido.
+Tener una plantilla de prompt bien diseñada es un superpoder para generar contenido técnico con Modelos de Lenguaje Grandes (LLMs). Asegura consistencia, refuerza estándares de calidad y acelera dramáticamente el proceso de creación.
 
-Este artículo documenta el "prompt maestro" fundamental para generar un artículo técnico completo y autónomo. Esta es la plantilla ideal para crear documentación en profundidad sobre un tema específico.
+Este artículo documenta la plantilla maestra para generar un artículo técnico completo y autónomo. Es la base ideal para crear documentación detallada sobre un tema específico.
 
-## La Plantilla de Prompt Maestro
+## La Plantilla Maestra
 
-Aquí está la plantilla completa. Está diseñada para ser alimentada directamente a un modelo de IA para producir un artículo técnico estructurado, enfocado y correctamente formateado.
+Esta plantilla está diseñada con marcadores de posición (`[... ]`) para ser universalmente adaptable. Simplemente reemplaza el texto dentro de los corchetes para ajustarlo a tus necesidades.
 
 ```markdown
-Actúa como un experto en Linux y DevOps con certificación LFCS de la Linux Foundation, especializado en crear contenido técnico para certificaciones. Tu tarea es generar un artículo de documentación en formato Markdown estricto, optimizado para Hugo+Docsy.
+Actúa como un escritor técnico experto en [ÁREA_DE_EXPERTISE], especializado en crear contenido claro y conciso para profesionales y estudiantes que se preparan para la certificación [NOMBRE_DE_LA_CERTIFICACIÓN_O_CONTEXTO].
 
-El artículo debe cubrir el siguiente tema: [Insertar Comando o Tema Tecnológico Aquí]
+Tu tarea es generar un artículo de documentación completo en formato Markdown estricto, optimizado para Hugo con el theme Docsy, sobre el siguiente tema: **[TEMA_ESPECÍFICO_AQUÍ]**
 
-Requisitos del Contenido:
-1.  **Formato:** Markdown estricto. Debe incluir una sección de front matter de Hugo para el theme Docsy al inicio con 'title', 'description', 'weight', 'tags', y 'categories'.
-1.1 **categories:** Considerando que las cinco dominios y competencias de la LCFS son: Implementación de Operaciones; Networking; Almacenamiento; Comandos Esenciales y  Usuarios y Grupos, asignales la que sén el tema corresponda, si ademas consideras que puede pertenecer a otra categoría también la agregas.
-1.2 **tags:** Asigna al menos un valor para este atributo, que sea relacionado al contexto de la tecnología IT relacionada.
-2.  **Enfoque:** El contenido debe ser conciso, práctico, y enfocarse exclusivamente en los aspectos más relevantes para un examen de certificación como el LFCS (Linux Foundation Certified Sysadmin). Evita detalles excesivamente esotéricos.
-3.  **Estructura:** Organiza el artículo con encabezados claros. Explica la sintaxis básica y luego las sub-operaciones más importantes con ejemplos.
-4.  **Ejemplos:** Incluye ejemplos de código claros y breves dentro de bloques de código bash (```bash).
-5.  **Idioma:** La salida final debe estar en [Idioma Deseado].
+### Requisitos del Contenido:
+1.  **Formato:** Markdown estricto.
+2.  **Front Matter:** Incluye un bloque de front matter YAML completo al inicio del artículo con los siguientes campos:
+    - `title`: Un título claro y descriptivo para el artículo.
+    - `linkTitle`: Una versión más corta para menús, si es aplicable (ej. "Comando [TEMA]").
+    - `description`: Un resumen de 1-2 frases sobre el contenido del artículo.
+    - `weight`: Usa el valor `10`.
+    - `categories`: Asigna una o más categorías relevantes de la lista: [LISTA_DE_CATEGORÍAS_VÁLIDAS].
+    - `tags`: Asigna al menos tres etiquetas relevantes y específicas en minúsculas (ej. `[tag1]`, `[tag2]`).
+3.  **Enfoque:** El contenido debe ser práctico y centrarse en los aspectos más importantes para un profesional que utiliza esta tecnología. Evita la historia del tema o detalles excesivamente esotéricos.
+4.  **Estructura:** Organiza el artículo con encabezados lógicos (##, ###). Comienza con una breve introducción, explica la sintaxis principal, y luego detalla los casos de uso más comunes con ejemplos.
+5.  **Ejemplos de Código:** Incluye ejemplos claros y funcionales dentro de bloques de código con el lenguaje especificado (ej. ```bash).
+6.  **Tono y Estilo:** El tono debe ser profesional, autoritativo y didáctico. No incluyas opiniones personales, saludos o texto conversacional. Ve directo al punto.
+7.  **Idioma:** La salida final debe estar en [IDIOMA_DESEADO].
 
-Asegúrate de que toda la salida final esté envuelta en un solo bloque de código delimitado (```markdown) para evitar problemas de formateo al copiar y pegar.
+### Requisitos de Salida:
+Asegúrate de que TODA la salida, incluyendo el front matter, esté envuelta en un único bloque de código markdown (```markdown) para facilitar el copiado y pegado sin errores de formato.
 ```
 
-## Deconstruyendo el Prompt: Por Qué Funciona
+## Ejemplo de Uso: Artículo sobre `ip` para LFCS
 
-Este prompt es efectivo porque deja muy poco al azar. Cada instrucción sirve un propósito específico.
+Para generar un artículo sobre el comando `ip` en el contexto de la certificación LFCS, rellenaríamos la plantilla así:
 
-{{% alert title="1. Estableciendo la Persona: 'Actúa como...'" color="success" %}}
-Esta es la parte más crítica. Al decirle a la IA "Actúa como un experto en Linux y DevOps...", estamos estableciendo el **contexto, tono, y base de conocimiento**. El modelo adoptará una voz profesional y técnica y extraerá de sus datos de entrenamiento relacionados con ese dominio específico.
-{{% /alert %}}
+-   **[ÁREA_DE_EXPERTISE]:** `Redes en Linux y DevOps`
+-   **[NOMBRE_DE_LA_CERTIFICACIÓN_O_CONTEXTO]:** `LFCS (Linux Foundation Certified Sysadmin)`
+-   **[TEMA_ESPECÍFICO_AQUÍ]:** `El comando ip para la gestión de redes`
+-   **[LISTA_DE_CATEGORÍAS_VÁLIDAS]:** `["Networking", "Essential Commands"]`
+-   **[IDIOMA_DESEADO]:** `Español`
 
-{{% alert title="2. Definiendo la Tarea Principal: 'Tu tarea es generar...'" color="success" %}}
-Esto establece claramente el entregable final: un artículo de documentación. Inmediatamente define el alcance de la salida, previniendo una respuesta conversacional o una simple lista de hechos.
-{{% /alert %}}
+## Deconstruyendo el Prompt
 
-{{% alert title="3. Estableciendo Restricciones Claras: 'Requisitos del Contenido'" color="success" %}}
-Esta sección actúa como un conjunto de "barandillas" que guían a la IA para producir exactamente la salida necesaria.
+Este prompt es efectivo porque es un conjunto de instrucciones precisas:
 
-- **Formato**: Especificar "Markdown estricto" y los campos exactos del "front matter" es esencial para la compatibilidad con Hugo.
-- **Enfoque**: Definir la audiencia ("para un examen de certificación") y el alcance ("evita detalles excesivamente esotéricos") previene que la IA genere un artículo excesivamente largo o irrelevante.
-- **Estructura**: Solicitar encabezados claros y un flujo lógico asegura que el artículo esté bien organizado y sea fácil de leer para un humano.
-{{% /alert %}}
+1.  **Establece la Persona:** `Actúa como...` define el contexto, tono y nivel de conocimiento esperado.
+2.  **Define la Tarea:** `Tu tarea es generar...` establece el objetivo final de forma inequívoca.
+3.  **Establece Restricciones Claras:** La sección de `Requisitos del Contenido` actúa como una guía de estilo detallada, controlando desde la estructura del archivo hasta el tono del contenido.
+4.  **Controla el Formato de Salida:** La instrucción final de `Requisitos de Salida` es una meta-instrucción crucial que garantiza que la respuesta del modelo sea 100% utilizable de inmediato.
 
-{{% alert title="4. La Instrucción Final 'Envolvente': 'Asegúrate de que...'" color="success" %}}
-Esta es una meta-instrucción para interfaces de chat. Le pide al modelo que envuelva su respuesta en un bloque de código, asegurando que el texto crudo pueda copiarse perfectamente, preservando todo el formateo.
-{{% /alert %}}
-
-## Conclusión
-
-Al usar un prompt detallado y estructurado como este, pasas de "pedirle" información a la IA a "instruirla" para realizar una tarea específica y repetible. Esta plantilla puede adaptarse fácilmente para diferentes temas.
-
-> **Siguiente Paso:** Para generar múltiples artículos en un solo lote, ve la evolución de esta plantilla en [Prompt 002 - Plantilla TechDoc temas múltiples]({{< relref "prompt-template-multiples-topic-individual.md" >}}).
+> **Siguiente Paso:** Para escalar la producción, aprende a generar múltiples artículos en un solo lote con la [Plantilla de Pipeline de Contenido]({{< relref "prompt-template-multiples-topic-individual.md" >}}).

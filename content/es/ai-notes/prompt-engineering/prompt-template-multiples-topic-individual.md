@@ -1,93 +1,72 @@
 ---
-title: "Una Plantilla para Generar Múltiples Artículos Individuales"
+title: "Plantilla de Pipeline para Generar Múltiples Artículos"
 linkTitle: "Prompt 002 - Plantilla TechDoc temas múltiples"
-description: "Una plantilla de prompt avanzada que instruye a una IA para actuar como un pipeline de contenido, generando múltiples artículos separados a partir de una lista de temas en una sola ejecución."
-weight: 120
+description: "Una plantilla de prompt avanzada que instruye a una IA para actuar como un pipeline, generando múltiples artículos Markdown separados a partir de una lista en una sola ejecución."
+weight: 20
 categories: ["ia", "tecnología"]
 tags: ["ingeniería-prompts", "plantilla-múltiple", "pipeline-contenido", "automatización", "batch-generation", "documentación-técnica", "llm", "escalabilidad"]
 ---
 
-Mientras que [Prompt 001 - TechDoc Individual]({{< relref "prompt-template-for-tech-docs.md" >}}) es perfecto para crear un artículo a la vez, podemos evolucionar el concepto para generar contenido en lotes. Esto es increíblemente eficiente cuando necesitas crear varias páginas de documentación relacionadas pero separadas.
+Mientras que el [Prompt 001]({{< relref "prompt-template-for-tech-docs.md" >}}) es perfecto para un artículo a la vez, podemos escalar el proceso para generar contenido en lotes. Esto es increíblemente eficiente cuando necesitas crear múltiples páginas de documentación relacionadas.
 
-Este artículo documenta un prompt de "pipeline" avanzado. El objetivo es proporcionar a la IA una lista de temas y hacer que genere un artículo Markdown completo e individual para **cada** tema en esa lista, todo dentro de una sola respuesta.
+Este artículo documenta un prompt de "pipeline" avanzado. El objetivo es dar a la IA una lista de temas y hacer que genere un artículo Markdown completo e individual para **cada** tema, todo dentro de una única respuesta.
 
 ## El Prompt de Pipeline Maestro
 
-Aquí está la plantilla completa. Funciona dándole a la IA una lista de temas y una sub-plantilla para usar en cada uno.
+Esta plantilla le da a la IA una lista de temas y una sub-plantilla dinámica para aplicar a cada uno.
 
 ```markdown
-Actúa como un pipeline de generación de contenido experto en Linux y DevOps con certificación LFCS de la Linux Foundation, especializado en crear contenido técnico para el estudio de la certificación LFCS. Tu tarea es generar un artículo de documentación en formato Markdown estricto, optimizado para Hugo+Docsy. Tu tarea es tomar la siguiente lista de temas y, para cada tema, generar un artículo de documentación completo e individual en formato Markdown estricto, optimizado para ser agregado al sitio de Hugo theme Docsy.
+Actúa como un pipeline de generación de contenido automatizado. Eres un experto en [ÁREA_DE_EXPERTISE], especializado en crear documentación técnica para la certificación [NOMBRE_DE_LA_CERTIFICACIÓN_O_CONTEXTO].
 
-Requisitos del Contenido:
-1.  **Formato:** Markdown estricto. Debe incluir una sección de front matter de Hugo para el theme Docsy al inicio con 'title', 'description', 'weight', 'tags', y 'categories'.
-1.1 **categories:** Considerando que las cinco dominios y competencias de la LCFS son: Implementación de Operaciones; Networking; Almacenamiento; Comandos Esenciales y  Usuarios y Grupos, asignales la que sén el tema corresponda, si ademas consideras que puede pertenecer a otra categoría también la agregas.
-1.2 **tags:** Asigna al menos un valor para este atributo, que sea relacionado al contexto de la tecnología IT relacionada.
-2.  **Enfoque:** El contenido debe ser conciso, práctico, y enfocarse exclusivamente en los aspectos más relevantes para un examen de certificación como el LFCS (Linux Foundation Certified Sysadmin). Evita detalles excesivamente esotéricos.
-3.  **Estructura:** Organiza el artículo con encabezados claros. Explica la sintaxis básica y luego las sub-operaciones más importantes con ejemplos.
-4.  **Ejemplos:** Incluye ejemplos de código claros y breves dentro de bloques de código bash (```bash).
-5.  **Idioma:** La salida final debe estar en [Idioma Deseado].
+Tu tarea es tomar la siguiente "Lista de Temas" y, para cada tema, generar un artículo de documentación completo e individual en formato Markdown estricto, optimizado para Hugo+Docsy.
 
-Asegúrate de que toda la salida final esté envuelta en un solo bloque de código delimitado (```markdown) para evitar problemas de formateo al copiar y pegar.
+### Requisitos Generales:
+1.  **Formato:** Markdown estricto para cada artículo.
+2.  **Enfoque:** El contenido debe ser conciso, práctico y relevante para un profesional en el campo.
+3.  **Ejemplos:** Incluye ejemplos de código claros en bloques ```bash.
+4.  **Idioma:** La salida final debe estar en [IDIOMA_DESEADO].
 
-**Lista de Temas:**
-- comando ip
-- comando nmcli
-- comando ifconfig
-- Configuración de red en distribuciones linux basadas en RHEL 8 o superior
-- Configuración de red en distribuciones linux Debian (/etc/networking/interfaces)
-- Configuración de red en distribuciones Linux Ubuntu (/etc/netplan)
-- Configuración de red en distribuciones linux basadas en RHEL 7 o anteriores
-
-**Plantilla de Artículo a usar para CADA tema:**
-"""
----
-title: "[TÍTULO_DEL_TEMA_AQUÍ]"
-description: "Una guía práctica para usar el comando [TÍTULO_DEL_TEMA_AQUÍ] para programación de tareas y gestión del sistema."
-weight: [UN_NÚMERO_ÚNICO_AQUÍ]
-categories: ["CATEGORIA1", "CATEGORIA2", ...]
-tags: ["TAGS_REFERENCIA_RELACIONADO", "TAGS2_REFERENCIA_RELACIONADO", ...]
----
-
-(Genera un artículo conciso pero completo sobre [TÍTULO_DEL_TEMA_AQUÍ] aquí, basado en esta plantilla, siguiendo la estructura y enfoque de una guía de certificación técnica. Incluye sintaxis, casos de uso comunes, y ejemplos claros.)
-"""
-
-**Instrucciones:**
-1.  Itera a través de cada elemento en la "Lista de Temas".
-2.  Para cada tema, usa la "Plantilla de Artículo" para generar un artículo completo. Reemplaza los marcadores de posición como `[TÍTULO_DEL_TEMA_AQUÍ]`.
-3.  Asegúrate de que cada artículo generado esté completo y se sostenga por sí mismo.
-4.  Separa cada artículo completo en tu salida con una línea separadora clara, como esta:
-    `--- FIN DEL ARTÍCULO ---`
+### Lista de Temas a Procesar:
+```
+[LISTA_DE_TEMAS_SEPARADOS_POR_LÍNEA]
 ```
 
-## Deconstruyendo el Prompt: Por Qué Funciona
+### Plantilla de Artículo (A usar para CADA tema):
+Debes usar esta plantilla como base para cada artículo. Rellena los marcadores de posición dinámicamente.
+"""
+---
+title: "[TÍTULO_GENERADO_A_PARTIR_DEL_TEMA]"
+description: "[DESCRIPCIÓN_DE_1-2_FRASES_GENERADA_PARA_EL_TEMA]"
+weight: [NÚMERO_INCREMENTAL_EMPEZANDO_EN_10_Y_SUMANDO_10_POR_CADA_ARTÍCULO]
+categories: [[LISTA_DE_CATEGORÍAS_VÁLIDAS]]
+tags: [[LISTA_DE_3_TAGS_RELEVANTES_GENERADOS_PARA_EL_TEMA]]
+---
 
-Este prompt es más complejo porque define un flujo de trabajo programático para la IA.
+(Aquí, genera un artículo conciso pero completo sobre el tema actual, siguiendo todos los requisitos generales. La estructura debe incluir una introducción, sintaxis/uso principal, y 2-3 ejemplos prácticos con encabezados claros.)
+"""
 
-{{% alert title="1. Estableciendo la Persona: 'Actúa como un pipeline de generación de contenido'" color="info" %}}
-Hemos cambiado la persona de un simple "experto" a un "pipeline". Esto enmarca la tarea como un proceso repetible y automatizado, que es exactamente lo que queremos.
-{{% /alert %}}
+### Instrucciones del Pipeline:
+1.  Itera sobre cada ítem en la "Lista de Temas".
+2.  Para cada tema, aplica la "Plantilla de Artículo". Genera dinámicamente el contenido para los marcadores de posición (`title`, `description`, `weight`, `tags`).
+3.  Asegúrate de que cada artículo generado sea autónomo y completo.
+4.  Si un tema en la lista es ambiguo o no tienes suficiente información, omítelo y añade una nota al final de tu respuesta en la sección de "Notas".
+5.  Separa cada artículo completo en tu salida con un separador claro y único en una nueva línea:
+    `<!-- ARTICLE_SEPARATOR: [TEMA_ORIGINAL_DE_LA_LISTA] -->`
+6.  Envuelve TODA la salida, incluyendo todos los artículos y separadores, en un único bloque de código markdown (```markdown).
+```
 
-{{% alert title="2. Proporcionando Datos Claros y una Plantilla" color="info" %}}
-En lugar de un solo tema, proporcionamos dos entradas distintas:
+## Deconstruyendo el Prompt de Pipeline
 
-- Una **Lista de Temas**: Los datos que el pipeline procesará.
-- Una **Plantilla de Artículo**: El "molde" que se usará para cada pieza de datos. Esto nos da un control increíble sobre la estructura final de cada artículo.
-{{% /alert %}}
+1.  **Persona de Pipeline:** `Actúa como un pipeline...` cambia el marco mental de la IA de un "escritor" a un "procesador automatizado", ideal para tareas repetitivas.
+2.  **Entradas Separadas:** El prompt distingue claramente entre los **Datos** (`Lista de Temas`) y la **Lógica** (`Plantilla de Artículo` e `Instrucciones`).
+3.  **Plantilla Dinámica:** Instruir a la IA para que genere `description` o `tags` dinámicamente produce resultados mucho más relevantes que una plantilla estática. Pedir un `weight` incremental asegura un ordenamiento por defecto correcto en Hugo.
+4.  **Instrucciones de Bucle Explícitas:** Las instrucciones `Itera...` y `Para cada tema...` convierten el prompt en un pseudo-algoritmo que la IA puede seguir de manera fiable.
+5.  **Separador Robusto:** Usar un comentario HTML como separador es una práctica recomendada, ya que es invisible en el renderizado final y perfecto para el parsing automático o manual.
 
-{{% alert title="3. Instrucciones de Bucle Explícitas" color="info" %}}
-El núcleo del prompt reside en las instrucciones explícitas: "Itera a través de cada elemento...", "Para cada tema, usa la 'Plantilla de Artículo'...". Esto elimina toda ambigüedad y le dice a la IA que realice un bucle, que es un concepto que entiende bien.
-{{% /alert %}}
+## Flujo de Trabajo Sugerido
 
-{{% alert title="4. Definiendo el Formato de Salida" color="info" %}}
-Solicitar un separador claro (`--- FIN DEL ARTÍCULO ---`) es crucial. Hace que la respuesta única y larga de la IA sea fácil de analizar para un humano. Simplemente puedes copiar y pegar cada sección en su propio archivo `.md`.
-{{% /alert %}}
-
-## Flujo de Trabajo
-
-El flujo de trabajo previsto es:
-
-1.  Envía este prompt completo a la IA.
-2.  Recibe la respuesta única conteniendo todos los artículos generados.
-3.  Copia el contenido para el artículo de "crontab" y guárdalo como `crontab.md`.
-4.  Copia el contenido para el artículo de "at" y guárdalo como `at.md`.
-5.  Y así sucesivamente para todos los temas.
+1.  Rellena los marcadores de posición en la plantilla maestra (`[ÁREA_DE_EXPERTISE]`, `[LISTA_DE_TEMAS]`, etc.).
+2.  Envía el prompt completo a la IA.
+3.  Recibe la respuesta única que contiene todos los artículos.
+4.  Divide la respuesta usando el separador `<!-- ARTICLE_SEPARATOR: ... -->`.
+5.  Guarda cada sección en su propio archivo `.md`. Se recomienda un nombre de archivo basado en el tema, por ejemplo, `comando-ip.md`, `comando-nmcli.md`, etc.

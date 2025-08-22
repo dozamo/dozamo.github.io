@@ -1,75 +1,72 @@
 ---
-title: "A Template for Generating Multiple Individual Articles"
-linkTitle: "Prompt 002 - Tpl TechDoc topic multiples"
-description: "An advanced prompt template that instructs an AI to act as a content pipeline, generating multiple, separate articles from a list of topics in a single run."
-weight: 120
+title: "Pipeline Template for Generating Multiple Articles"
+linkTitle: "Prompt 002 - Multi-Topic TechDoc Template"
+description: "An advanced prompt template that instructs an AI to act as a pipeline, generating multiple separate Markdown articles from a list in a single run."
+weight: 20
 categories: ["ai", "technology"]
-tags: ["prompts-engineering", "multiple-template", "pipeline-content", "automation", "batch-generation", "technical-documentation", "scalability", "llm"]
+tags: ["prompt-engineering", "multiple-template", "content-pipeline", "automation", "batch-generation", "technical-documentation", "llm", "scalability"]
 ---
 
-While [Prompt 001 - Single TechDoc]({{< relref "prompt-template-for-tech-docs.md" >}}) is perfect for creating one article at a time, we can evolve the concept to generate content in batches. This is incredibly efficient when you need to create several related but separate documentation pages.
+While [Prompt 001]({{< relref "prompt-template-for-tech-docs.md" >}}) is perfect for one article at a time, we can scale the process to generate content in batches. This is incredibly efficient when you need to create multiple related documentation pages.
 
-This article documents an advanced "pipeline" prompt. The goal is to provide the AI with a list of topics and have it generate a complete, individual Markdown article for **each** topic in that list, all within a single response.
+This article documents an advanced "pipeline" prompt. The goal is to give the AI a list of topics and have it generate a complete, individual Markdown article for **each** topic, all within a single response.
 
 ## The Master Pipeline Prompt
 
-Here is the complete template. It works by giving the AI a list of topics and a sub-template to use for each one.
+This template gives the AI a list of topics and a dynamic sub-template to apply to each one.
 
 ```markdown
-Act as a content generation pipeline. Your task is to take the following list of topics and, for each topic, generate a complete and individual documentation article in strict Markdown format.
+Act as an automated content generation pipeline. You are an expert in [AREA_OF_EXPERTISE], specializing in creating technical documentation for the [CERTIFICATION_NAME_OR_CONTEXT] certification.
 
-**Topics List:**
-- crontab
-- at
-- telinit
-- systemctl resource limits
+Your task is to take the following "Topic List" and, for each topic, generate a complete and individual documentation article in strict Markdown format, optimized for Hugo+Docsy.
 
-**Article Template to use for EACH topic:**
-"""
----
-title: "Managing [TOPIC_TITLE_HERE]"
-description: "A practical guide to using the [TOPIC_TITLE_HERE] command for task scheduling and system management."
-weight: [A_UNIQUE_NUMBER_HERE]
----
+### General Requirements:
+1.  **Format:** Strict Markdown for each article.
+2.  **Focus:** The content must be concise, practical, and relevant to a professional in the field.
+3.  **Examples:** Include clear code examples in ```bash blocks.
+4.  **Language:** The final output must be in [DESIRED_LANGUAGE].
 
-(Generate a concise but comprehensive article about [TOPIC_TITLE_HERE] here, following the structure and focus of a technical certification guide. Include syntax, common use cases, and clear examples.)
-"""
-
-**Instructions:**
-1.  Iterate through each item in the "Topics List".
-2.  For each topic, use the "Article Template" to generate a full article. Replace the placeholders like `[TOPIC_TITLE_HERE]`.
-3.  Ensure each generated article is complete and stands on its own.
-4.  Separate each complete article in your output with a clear separator line, like this:
-    `--- END OF ARTICLE ---`
+### Topic List to Process:
+```
+[LIST_OF_TOPICS_SEPARATED_BY_NEWLINE]
 ```
 
-## Deconstructing the Prompt: Why It Works
+### Article Template (To be used for EACH topic):
+You must use this template as the foundation for each article. Fill in the placeholders dynamically.
+"""
+---
+title: "[TITLE_GENERATED_FROM_TOPIC]"
+description: "[1-2_SENTENCE_DESCRIPTION_GENERATED_FOR_THE_TOPIC]"
+weight: [INCREMENTAL_NUMBER_STARTING_AT_10_AND_ADDING_10_FOR_EACH_ARTICLE]
+categories: [[LIST_OF_VALID_CATEGORIES]]
+tags: [[LIST_OF_3_RELEVANT_TAGS_GENERATED_FOR_THE_TOPIC]]
+---
 
-This prompt is more complex because it defines a programmatic workflow for the AI.
+(Here, generate a concise but complete article on the current topic, following all general requirements. The structure should include an introduction, main syntax/usage, and 2-3 practical examples with clear headings.)
+"""
 
-{{% alert title="1. Setting the Persona: 'Act as a content generation pipeline'" color="info" %}}
-We've changed the persona from a simple "expert" to a "pipeline". This frames the task as a repeatable, automated process, which is exactly what we want.
-{{% /alert %}}
+### Pipeline Instructions:
+1.  Iterate through each item in the "Topic List".
+2.  For each topic, apply the "Article Template". Dynamically generate the content for the placeholders (`title`, `description`, `weight`, `tags`).
+3.  Ensure each generated article is standalone and complete.
+4.  If a topic in the list is ambiguous or you don't have enough information, skip it and add a note at the end of your response in a "Notes" section.
+5.  Separate each complete article in your output with a clear and unique separator on a new line:
+    `<!-- ARTICLE_SEPARATOR: [ORIGINAL_TOPIC_FROM_LIST] -->`
+6.  Wrap the ENTIRE output, including all articles and separators, in a single markdown code block (```markdown).
+```
 
-{{% alert title="2. Providing Clear Data and a Template" color="info" %}}
-Instead of a single topic, we provide two distinct inputs:
-- A **Topics List**: The data the pipeline will process.
-- An **Article Template**: The "mold" that will be used for each piece of data. This gives us incredible control over the final structure of each article.
-{{% /alert %}}
+## Deconstructing the Pipeline Prompt
 
-{{% alert title="3. Explicit Looping Instructions" color="info" %}}
-The core of the prompt lies in the explicit instructions: "Iterate through each item...", "For each topic, use the 'Article Template'...". This removes all ambiguity and tells the AI to perform a loop, which is a concept it understands well.
-{{% /alert %}}
+1.  **Pipeline Persona:** `Act as a pipeline...` shifts the AI's mental frame from a "writer" to an "automated processor," ideal for repetitive tasks.
+2.  **Separate Inputs:** The prompt clearly distinguishes between the **Data** (`Topic List`) and the **Logic** (`Article Template` and `Instructions`).
+3.  **Dynamic Template:** Instructing the AI to dynamically generate the `description` or `tags` produces much more relevant results than a static template. Requesting an incremental `weight` ensures a correct default ordering in Hugo.
+4.  **Explicit Loop Instructions:** The `Iterate...` and `For each topic...` instructions turn the prompt into a pseudo-algorithm that the AI can reliably follow.
+5.  **Robust Separator:** Using an HTML comment as a separator is a best practice, as it's invisible in the final render and perfect for automatic or manual parsing.
 
-{{% alert title="4. Defining the Output Format" color="info" %}}
-Requesting a clear separator (`--- END OF ARTICLE ---`) is crucial. It makes the AI's single, long response easy for a human to parse. You can simply copy and paste each section into its own `.md` file.
-{{% /alert %}}
+## Suggested Workflow
 
-## Workflow
-
-The intended workflow is:
-1.  Send this complete prompt to the AI.
-2.  Receive the single response containing all the generated articles.
-3.  Copy the content for the "crontab" article and save it as `crontab.md`.
-4.  Copy the content for the "at" article and save it as `at.md`.
-5.  And so on for all topics.
+1.  Fill in the placeholders in the master prompt (`[AREA_OF_EXPERTISE]`, `[LIST_OF_TOPICS]`, etc.).
+2.  Submit the complete prompt to the AI.
+3.  Receive the single response containing all the articles.
+4.  Split the response using the `<!-- ARTICLE_SEPARATOR: ... -->` separator.
+5.  Save each section into its own `.md` file. A filename based on the topic is recommended, for example, `ip-command.md`, `nmcli-command.md`, etc.

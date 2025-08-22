@@ -1,61 +1,61 @@
 ---
-title: "A Template for Generating a Single Technical Article"
+title: "Prompt Template for a Single Technical Article"
 linkTitle: "Prompt 001 - Single TechDoc"
-description: "A reusable and effective prompt template for generating a single, high-quality technical article using AI language models."
-weight: 110
+description: "A reusable and robust prompt template for generating a single, high-quality technical article using AI language models."
+weight: 10
 categories: ["ai", "technology"]
-tags: ["prompts-engineering", "individual-template", "technical-documentation", "llm", "hugo", "markdown", "lfcs", "content-automation"]
+tags: ["prompt-engineering", "single-template", "technical-documentation", "llm", "hugo", "markdown", "content-automation"]
 ---
 
-Having a well-crafted prompt template is a superpower when working with Large Language Models (LLMs) to generate technical content. It ensures consistency, enforces quality standards, and dramatically speeds up the content creation process.
+Having a well-designed prompt template is a superpower when generating technical content with Large Language Models (LLMs). It ensures consistency, enforces quality standards, and dramatically accelerates the creation process.
 
-This article documents the foundational "master prompt" for generating a complete, self-contained technical article. This is the ideal template for creating in-depth documentation on a single topic.
+This article documents the master template for generating a complete, standalone technical article. It's the ideal foundation for creating detailed documentation on a specific topic.
 
-## The Master Prompt Template
+## The Master Template
 
-Here is the complete template. It is designed to be fed directly to an AI model to produce a structured, focused, and correctly formatted technical article.
+This template is designed with placeholders (`[...]`) to be universally adaptable. Simply replace the text within the brackets to fit your needs.
 
 ```markdown
-Act as a Linux and DevOps expert, specializing in creating technical content for certifications. Your task is to generate a documentation article in strict Markdown format, optimized for Hugo+Docsy.
+Act as an expert technical writer in [AREA_OF_EXPERTISE], specializing in creating clear and concise content for professionals and students preparing for the [CERTIFICATION_NAME_OR_CONTEXT] certification.
 
-The article must cover the following topic: [Insert Command or Technology Topic Here]
+Your task is to generate a complete documentation article in strict Markdown format, optimized for Hugo with the Docsy theme, on the following topic: **[SPECIFIC_TOPIC_HERE]**
 
-Content Requirements:
-1.  **Format:** Strict Markdown. It must include a Hugo front matter section at the beginning with 'title', 'description', and 'weight'.
-2.  **Focus:** The content must be concise, practical, and focus exclusively on the most relevant aspects for a certification exam like the LFCS (Linux Foundation Certified Sysadmin). Avoid overly esoteric details.
-3.  **Structure:** Organize the article with clear headings. Explain the basic syntax and then the most important sub-operations with examples.
-4.  **Examples:** Include clear and brief code examples inside bash code blocks (```bash).
-5.  **Language:** The final output must be in [Desired Language].
+### Content Requirements:
+1.  **Format:** Strict Markdown.
+2.  **Front Matter:** Include a complete YAML front matter block at the beginning of the article with the following fields:
+    - `title`: A clear and descriptive title for the article.
+    - `linkTitle`: A shorter version for menus, if applicable (e.g., "[TOPIC] Command").
+    - `description`: A 1-2 sentence summary of the article's content.
+    - `weight`: Use the value `10`.
+    - `categories`: Assign one or more relevant categories from the list: [LIST_OF_VALID_CATEGORIES].
+    - `tags`: Assign at least three relevant and specific lowercase tags (e.g., `[tag1]`, `[tag2]`).
+3.  **Focus:** The content must be practical and focus on the most important aspects for a professional using this technology. Avoid the topic's history or overly esoteric details.
+4.  **Structure:** Organize the article with logical headings (##, ###). Start with a brief introduction, explain the main syntax, and then detail the most common use cases with examples.
+5.  **Code Examples:** Include clear, functional examples within code blocks with the specified language (e.g., ```bash).
+6.  **Tone and Style:** The tone should be professional, authoritative, and educational. Do not include personal opinions, greetings, or conversational text. Get straight to the point.
+7.  **Language:** The final output must be in [DESIRED_LANGUAGE].
 
-Ensure that the entire final output is wrapped in a single fenced code block (```markdown) to avoid formatting issues when copying and pasting.
+### Output Requirements:
+Ensure that the ENTIRE output, including the front matter, is wrapped in a single markdown code block (```markdown) to facilitate copy-pasting without formatting errors.
 ```
 
-## Deconstructing the Prompt: Why It Works
+## Example Usage: Article on `ip` for LFCS
 
-This prompt is effective because it leaves very little to chance. Each instruction serves a specific purpose.
+To generate an article about the `ip` command in the context of the LFCS certification, we would fill out the template like this:
 
-{{% alert title="1. Setting the Persona: 'Act as...'" color="success" %}}
-This is the most critical part. By telling the AI to "Act as a Linux and DevOps expert...", we are setting the **context, tone, and knowledge base**. The model will adopt a professional, technical voice and draw from its training data related to that specific domain.
-{{% /alert %}}
+-   **[AREA_OF_EXPERTISE]:** `Linux Networking and DevOps`
+-   **[CERTIFICATION_NAME_OR_CONTEXT]:** `LFCS (Linux Foundation Certified Sysadmin)`
+-   **[SPECIFIC_TOPIC_HERE]:** `The ip command for network management`
+-   **[LIST_OF_VALID_CATEGORIES]:** `["Networking", "Essential Commands"]`
+-   **[DESIRED_LANGUAGE]:** `English`
 
-{{% alert title="2. Defining the Core Task: 'Your task is to generate...'" color="success" %}}
-This clearly states the final deliverable: a documentation article. It immediately sets the scope of the output, preventing a conversational response or a simple list of facts.
-{{% /alert %}}
+## Deconstructing the Prompt
 
-{{% alert title="3. Establishing Clear Constraints: 'Content Requirements'" color="success" %}}
-This section acts as a set of "guardrails" that guide the AI to produce the exact output needed.
+This prompt is effective because it's a set of precise instructions:
 
-- **Format**: Specifying "Strict Markdown" and the exact "front matter" fields is essential for Hugo compatibility.
-- **Focus**: Defining the audience ("for a certification exam") and scope ("avoid overly esoteric details") prevents the AI from generating an overly long or irrelevant article.
-- **Structure**: Requesting clear headings and a logical flow ensures the article is well-organized and easy for a human to read.
-{{% /alert %}}
+1.  **Establish the Persona:** `Act as...` defines the context, tone, and expected knowledge level.
+2.  **Define the Task:** `Your task is to generate...` unambiguously sets the final goal.
+3.  **Set Clear Constraints:** The `Content Requirements` section acts as a detailed style guide, controlling everything from file structure to content tone.
+4.  **Control the Output Format:** The final `Output Requirements` instruction is a crucial meta-instruction that ensures the model's response is 100% immediately usable.
 
-{{% alert title="4. The Final 'Wrapper' Instruction: 'Ensure that...'" color="success" %}}
-This is a meta-instruction for chat interfaces. It asks the model to wrap its response in a code block, ensuring the raw text can be copied perfectly, preserving all formatting.
-{{% /alert %}}
-
-## Conclusion
-
-By using a detailed, structured prompt like this one, you move from "asking" the AI for information to "instructing" it to perform a specific, repeatable task. This template can be easily adapted for different topics.
-
-> **Next Step:** For generating multiple articles in a single batch, see the evolution of this template in [Prompt 002 - Tpl TechDoc topic multiples]({{< relref "prompt-template-multiples-topic-individual.md" >}}).
+> **Next Step:** To scale production, learn to generate multiple articles in a single batch with the [Content Pipeline Template]({{< relref "prompt-template-multiples-topic-individual.md" >}}).

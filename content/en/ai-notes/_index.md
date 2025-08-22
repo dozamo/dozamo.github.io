@@ -10,9 +10,8 @@ categories: ["ai", "linux", "ssg", "certifications"]
 tags: ["artificial-intelligence", "lfcs", "hugo", "virtualization", "networking"]
 ---
 
-# AI Notes Hub
-
-Welcome to my collection of AI-related notes and techniques.
+<!-- # AI Notes Hub -->
+🧠 Welcome to my collection AI Notes Hub, of AI-related notes and techniques!
 
 ## What You'll Find Here
 
