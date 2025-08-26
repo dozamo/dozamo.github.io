@@ -1,11 +1,11 @@
 # My
-/dz_*
 *.v-*
 /*.org
 /docsy-example
 /docs.*
 *.zip
 *.org*
+PK*/
 
 # Hugo build output
 /public/
