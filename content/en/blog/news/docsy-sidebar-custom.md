@@ -3,6 +3,7 @@ title: Sidebar en Docsy
 date: 2025-08-14
 description: >
   Cómo funciona el sidebar en Docsy.
+draft: true
 ---
 
 
