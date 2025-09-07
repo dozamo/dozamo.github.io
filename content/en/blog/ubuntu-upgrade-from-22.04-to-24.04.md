@@ -41,7 +41,9 @@ sudo apt update
 sudo apt list --upgradable
 ```
 
+<!--
 **[IMAGE PLACEHOLDER: Screenshot showing lsb_release -a output for Ubuntu 22.04]**
+-->
 
 ## Common Repository Issues and Solutions
 
@@ -53,7 +55,9 @@ Err:1 http://security.ubuntu.com/ubuntu jammy-updates/main amd64 linux-firmware 
 E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/l/linux-firmware/linux-firmware_20220329.git681281e4-0ubuntu3.39_all.deb  500  Internal Server Error
 ```
 
+<!--
 **[IMAGE PLACEHOLDER: Screenshot of the apt upgrade error with 500 Internal Server Error]**
+-->
 
 ### Resolving Repository Issues
 
@@ -93,7 +97,9 @@ sudo apt autoremove -y
 sudo apt autoclean
 ```
 
+<!-- 
 **[IMAGE PLACEHOLDER: Terminal showing successful apt upgrade completion]**
+-->
 
 ### Step 2: Install Release Upgrader
 
@@ -115,7 +121,9 @@ Ensure the file contains:
 Prompt=lts
 ```
 
+<!--
 **[IMAGE PLACEHOLDER: Screenshot of /etc/update-manager/release-upgrades file]**
+-->
 
 ### Step 4: Check Upgrade Availability
 
@@ -133,7 +141,9 @@ This command will show you what upgrades are available without performing them.
 sudo do-release-upgrade
 ```
 
+<!--
 **[IMAGE PLACEHOLDER: Screenshot showing do-release-upgrade initial prompt]**
+-->
 
 The upgrade process will:
 1. Download necessary packages
@@ -141,6 +151,18 @@ The upgrade process will:
 3. Install new packages
 4. Configure services
 5. Clean up old packages
+
+### Handling Configuration Prompts
+
+During the upgrade process, you'll encounter various configuration prompts. One common prompt is the console character set configuration:
+
+<!-- 
+**[IMAGE PLACEHOLDER: Console character set configuration screen showing Latin, Combined options with "Combined - Latin; Slavic and non-Slavic Cyrillic" highlighted]**
+-->
+
+{{% alert title="Recommendation" color="info" %}}
+When prompted for character set configuration, select **"Combined - Latin; Slavic and non-Slavic Cyrillic"** for maximum compatibility with international characters and modern applications.
+{{% /alert %}}
 
 {{% alert title="Info" color="info" %}}
 The upgrade process typically takes 1-3 hours depending on your system specifications and internet connection speed.
@@ -171,7 +193,9 @@ sudo sed -i 's/jammy/noble/g' /etc/apt/sources.list
 sudo find /etc/apt/sources.list.d/ -name "*.list" -exec sudo sed -i 's/jammy/noble/g' {} \;
 ```
 
+<!--
 **[IMAGE PLACEHOLDER: Before and after comparison of sources.list file]**
+-->
 
 ### Step 3: Perform Manual Upgrade
 
@@ -202,7 +226,9 @@ cat /etc/os-release
 uname -r
 ```
 
+<!--
 **[IMAGE PLACEHOLDER: Screenshot showing Ubuntu 24.04 version information]**
+-->
 
 ### Service Status Verification
 
@@ -245,7 +271,9 @@ sudo apt-mark unhold package-name
 
 During upgrade, you may encounter prompts about configuration files:
 
+<!--
 **[IMAGE PLACEHOLDER: Screenshot of configuration file conflict prompt]**
+-->
 
 - Choose **Y** to install maintainer's version for system files
 - Choose **N** to keep your current version for customized configurations
@@ -283,7 +311,9 @@ Ubuntu 24.04 LTS brings several enhancements:
 - **Improved cloud integration** for major cloud providers
 - **Better container runtime support** with updated Docker and Podman
 
+<!--
 **[IMAGE PLACEHOLDER: Comparison chart showing performance improvements between 22.04 and 24.04]**
+-->
 
 ## Best Practices for Production Environments
 
@@ -347,7 +377,9 @@ Key takeaways:
 
 The improvements in Ubuntu 24.04 LTS, including enhanced security, better performance, and updated software packages, make the upgrade worthwhile for most Ubuntu 22.04 installations.
 
+<!--
 **[IMAGE PLACEHOLDER: Final screenshot showing successful Ubuntu 24.04 system dashboard or neofetch output]**
+-->
 
 ---
 
