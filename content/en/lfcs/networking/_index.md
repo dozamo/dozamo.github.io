@@ -3,7 +3,7 @@ title: "2. Networking - 25%"
 description: >
   Focuses on configuring, securing, and troubleshooting network services, from IP addressing and SSH to firewalls and advanced traffic routing.
 weight: 30
-categories: ["Networking", "Operations Deployment", "Essential Commands"]
+categories: ["Linux", "LFCS"]
 tags: ["networking", "linux", "sysadmin", "lfcs", "ipv4", "ipv6", "ssh", "firewall"]
 ---
 

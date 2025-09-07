@@ -3,8 +3,8 @@ title: "Pipeline Template for Generating Multiple Articles"
 linkTitle: "Prompt 002 - Multi-Topic TechDoc Template"
 description: "An advanced prompt template that instructs an AI to act as a pipeline, generating multiple separate Markdown articles from a list in a single run."
 weight: 20
-categories: ["ai", "technology"]
-tags: ["prompt-engineering", "multiple-template", "content-pipeline", "automation", "batch-generation", "technical-documentation", "llm", "scalability"]
+categories: ["AI", "Technical Documentation"]
+tags: ["Prompt Engineering"]
 ---
 
 While [Prompt 001]({{< relref "prompt-template-for-tech-docs.md" >}}) is perfect for one article at a time, we can scale the process to generate content in batches. This is incredibly efficient when you need to create multiple related documentation pages.

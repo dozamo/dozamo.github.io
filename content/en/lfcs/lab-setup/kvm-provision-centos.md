@@ -3,7 +3,7 @@ title: Provisioning CentOS VM
 date: 2017-01-05
 description: >
   A step-by-step guide to installing a CentOS Stream 8 VM using virt-install and KVM storage pools
-categories: [Study, IaC, infrastructure-as-code, laboratory, Tutorials, Virtualization, lfcs]
+categories: ["Linux", "LFCS"]
 tags: [kvm, linux, "Rocky Linux", RHEL]
 weight: 100
 ---

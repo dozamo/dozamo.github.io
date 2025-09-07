@@ -3,8 +3,8 @@ title: "Prompt Template for a Single Technical Article"
 linkTitle: "Prompt 001 - Single TechDoc"
 description: "A reusable and robust prompt template for generating a single, high-quality technical article using AI language models."
 weight: 10
-categories: ["ai", "technology"]
-tags: ["prompt-engineering", "single-template", "technical-documentation", "llm", "hugo", "markdown", "content-automation"]
+categories: ["AI", "Technical Documentation"]
+tags: ["Prompt Engineering"]
 ---
 
 Having a well-designed prompt template is a superpower when generating technical content with Large Language Models (LLMs). It ensures consistency, enforces quality standards, and dramatically accelerates the creation process.

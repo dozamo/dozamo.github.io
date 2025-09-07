@@ -2,7 +2,7 @@
 title: "The nmcli Command"
 description: "A guide to nmcli, the command-line tool for NetworkManager, essential for network management on modern systems."
 weight: 20
-categories: ["Networking", "Essential Commands"]
+categories: ["Linux", "LFCS"]
 tags: ["networking", "networking", "networkmanager", "nmcli", "linux", "rhel", "ubuntu"]
 ---
 

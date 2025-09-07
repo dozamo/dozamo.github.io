@@ -2,7 +2,7 @@
 title: "The ip Command"
 description: "A practical guide to using the ip command for network management in Linux, essential for the LFCS certification."
 weight: 10
-categories: ["Networking", "Essential Commands"]
+categories: ["Linux", "LFCS"]
 tags: ["networking", "iproute2", "linux", "sysadmin"]
 ---
 

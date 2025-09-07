@@ -65,6 +65,26 @@ Actualmente, el contenido se está centrando en:
 - 🐧 Comandos y utilidades para la administración de sistemas Linux.
 - 💡 Guías rápidas y "cheatsheets" sobre diversas herramientas de IT.
 
+## 📙 Notas para con el sitio
+
+Estas notas son de soporte para el autor/desarrollador del sitio
+
+###  Categorias/Tags
+
+Se listan aquí las categorias (`categories`) y tags (`tags`) actuales utilizados para los artículos/entradas.
+
+### En Ingles
+
+```markdown
+# Definiciones en el front matter (metadatos de los markdown)
+...
+categories: ["AI", "Technical Documentation", "LFCS", "Laboratory", "Linux", "Windows"]
+tags: ["Linux CLI", "Prompt Engineering"]
+...
+```
+
+### En Español
+
 ## 📄 Licencia
 
 El contenido de este proyecto está distribuido bajo la Licencia MIT. Puedes ver los detalles completos en el fichero LICENSE del repositorio.

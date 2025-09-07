@@ -16,6 +16,11 @@ defaultContentLanguageInSubdir: false
 # Useful when translating.
 enableMissingTranslationPlaceholders: true
 
+    
+# Enable/disable next/previous links in page footer
+# See https://gohugo.io/templates/section-pages/#section-pagination
+showPaginator: true
+
 # Language configuration
 languages:
   en:

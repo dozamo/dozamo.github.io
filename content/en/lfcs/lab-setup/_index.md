@@ -3,7 +3,7 @@ title: Lab Environment Setup
 #menu: {main: {weight: 20}}
 weight: 10
 description: This section details the process of setting up the virtual lab environment.
-categories: [Study, laboratory, certification, Tutorials, Virtualization, lfcs]
+categories: ["Linux", "LFCS"]
 tags: [kvm, linux]
 ---
 

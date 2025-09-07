@@ -3,7 +3,7 @@ title: "mount command"
 titleLink: "mount"
 description: "Practical guide to using the mount command in Linux to mount file systems."
 tags: ["mount", "filesystem", "storage", "linux-cli", "LFCS"]
-categories: ["Storage"]
+categories: ["Linux", "LFCS"]
 weight: 170
 ---
 

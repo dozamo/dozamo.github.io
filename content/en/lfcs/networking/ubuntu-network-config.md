@@ -3,7 +3,7 @@ title: "Network config. on Ubuntu"
 titleLink: "Network config. on Ubuntu (/etc/netplan)"
 description: "A guide to network configuration on modern Ubuntu Server versions using Netplan and its YAML syntax."
 weight: 60
-categories: ["Networking", "Operations Implementation"]
+categories: ["Linux", "LFCS"]
 tags: ["networking", "ubuntu", "netplan", "systemd-networkd", "networkmanager"]
 ---
 

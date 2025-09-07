@@ -5,7 +5,7 @@
 /docs.*
 *.zip
 *.org*
-PK*/
+PKM*/
 
 # Hugo build output
 /public/

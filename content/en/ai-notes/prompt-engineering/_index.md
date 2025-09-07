@@ -2,8 +2,8 @@
 title: "Prompt Engineering Guide for Technical Documentation"
 description: "A collection of proven templates and techniques for crafting effective prompts to automate technical documentation generation with Language Models."
 weight: 10
-categories: ["ai", "technology"]
-tags: ["prompt-engineering", "templates", "llm", "generative-ai", "technical-documentation", "automation"]
+categories: ["AI", "Prompt-Engineering"]
+tags: ["templates", "llm", "generative-ai", "technical-documentation", "automation"]
 ---
 
 🚀 Welcome to the **Prompt Engineering Guide**!

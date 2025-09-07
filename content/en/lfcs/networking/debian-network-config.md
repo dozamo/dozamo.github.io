@@ -3,7 +3,7 @@ title: "Network config. on Debian (and Ubuntu older)"
 titleLink: "Network Configuration on Debian (and Ubuntu < 17.10) - /etc/network/interfaces)"
 description: "A practical guide for persistent network configuration on Debian and its derivatives using the /etc/network/interfaces file and the ifupdown package."
 weight: 50
-categories: ["Networking", "Operations Implementation"]
+categories: ["Linux", "LFCS"]
 tags: ["networking", "debian", "ubuntu (version old)",  "ifupdown", "interfaces"]
 ---
 

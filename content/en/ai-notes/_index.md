@@ -6,7 +6,7 @@ description: "A collection of prompts, techniques, and insights for interacting 
 type: "docs"
 cascade:
   - type: "docs"
-categories: ["ai", "linux", "ssg", "certifications"]
+categories: ["AI"]
 tags: ["artificial-intelligence", "lfcs", "hugo", "virtualization", "networking"]
 ---
 

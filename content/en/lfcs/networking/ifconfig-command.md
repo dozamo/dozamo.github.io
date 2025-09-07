@@ -2,7 +2,7 @@
 title: "The ifconfig Command (Legacy)"
 description: "A review of the ifconfig command for network management. Although deprecated, it's important to know for older systems and the LFCS certification."
 weight: 30
-categories: ["Networking", "Essential Commands"]
+categories: ["Linux", "LFCS"]
 tags: ["networking", "ifconfig", "legacy", "net-tools", "sysadmin"]
 ---
 

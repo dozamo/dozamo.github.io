@@ -3,7 +3,7 @@ title: Provisioning Ubuntu 22.04 LTS
 date: 2017-01-05
 description: >
   Guide for an automated, text-based installation of an Ubuntu 22.04 LTS server for our lab.
-categories: [Study, IaC, infrastructure-as-code, laboratory, Tutorials, Virtualization, lfcs]
+categories: ["Linux", "LFCS"]
 tags: [kvm, linux, Debian, Ubuntu] 
 weight: 200
 ---

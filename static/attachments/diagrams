@@ -1,0 +1,92 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9" pages="2">
+  <diagram name="Escenario Exam Simulator 1" id="F8FUG1SxfwnxnC4no4QG">
+    <mxGraphModel dx="1426" dy="880" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XE6ZfTJgXxKVBsSBnSjL-12" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="90" y="140" width="670" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="XE6ZfTJgXxKVBsSBnSjL-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=none;startFill=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" source="XE6ZfTJgXxKVBsSBnSjL-1" target="XE6ZfTJgXxKVBsSBnSjL-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XE6ZfTJgXxKVBsSBnSjL-1" value="web-srv1" style="image;html=1;image=img/lib/clip_art/computers/Server_Tower_128x128.png" parent="1" vertex="1">
+          <mxGeometry x="235" y="200" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="XE6ZfTJgXxKVBsSBnSjL-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#d5e8d4;strokeColor=#82b366;endArrow=none;startFill=0;strokeWidth=2;" parent="1" source="XE6ZfTJgXxKVBsSBnSjL-2" target="XE6ZfTJgXxKVBsSBnSjL-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="425" y="340" />
+              <mxPoint x="425" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XE6ZfTJgXxKVBsSBnSjL-2" value="app-srv1" style="image;html=1;image=img/lib/clip_art/computers/Server_Tower_128x128.png" parent="1" vertex="1">
+          <mxGeometry x="525" y="260" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="XE6ZfTJgXxKVBsSBnSjL-3" value="data-002" style="image;html=1;image=img/lib/clip_art/computers/Database_128x128.png" parent="1" vertex="1">
+          <mxGeometry x="535" y="370" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="XE6ZfTJgXxKVBsSBnSjL-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=none;startFill=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" source="XE6ZfTJgXxKVBsSBnSjL-4" target="XE6ZfTJgXxKVBsSBnSjL-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="295" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XE6ZfTJgXxKVBsSBnSjL-4" value="data-001" style="image;html=1;image=img/lib/clip_art/computers/Database_128x128.png" parent="1" vertex="1">
+          <mxGeometry x="235" y="340" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="XE6ZfTJgXxKVBsSBnSjL-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#d5e8d4;strokeColor=#82b366;endArrow=none;startFill=0;strokeWidth=2;" parent="1" source="XE6ZfTJgXxKVBsSBnSjL-5" target="XE6ZfTJgXxKVBsSBnSjL-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="475" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XE6ZfTJgXxKVBsSBnSjL-5" value="terminal" style="image;html=1;image=img/lib/clip_art/computers/Monitor_Tower_128x128.png" parent="1" vertex="1">
+          <mxGeometry x="435" y="160" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="XE6ZfTJgXxKVBsSBnSjL-6" value="" style="html=1;outlineConnect=0;fillColor=#d5e8d4;strokeColor=#82b366;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.bus;gradientColor=none;gradientDirection=north;perimeter=backbonePerimeter;backboneSize=20;rotation=-90;" parent="1" vertex="1">
+          <mxGeometry x="295" y="340" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="XE6ZfTJgXxKVBsSBnSjL-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.375;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;startFill=0;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" source="XE6ZfTJgXxKVBsSBnSjL-3" target="XE6ZfTJgXxKVBsSBnSjL-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="405" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="iYpON9LVujBza2PXP2dk" name="Escenario en casa">
+    <mxGraphModel dx="1426" dy="880" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="wO4rSnAQLMCB-P_E-RRo-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;endArrow=none;startFill=0;" edge="1" parent="1" source="vEOCDRh74m1K0qP0J2ZR-1" target="wO4rSnAQLMCB-P_E-RRo-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vEOCDRh74m1K0qP0J2ZR-1" value="&lt;div&gt;victus-lfcs&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;172.19.0.50&lt;/span&gt;&lt;/div&gt;" style="image;html=1;image=img/lib/clip_art/computers/Laptop_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="240" y="110" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wO4rSnAQLMCB-P_E-RRo-1" value="web-srv1-lfcs" style="image;html=1;image=img/lib/clip_art/computers/Server_Tower_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="560" y="320" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wO4rSnAQLMCB-P_E-RRo-2" value="terminal-lfcs&lt;div&gt;172.19.0.10&lt;/div&gt;" style="image;html=1;image=img/lib/clip_art/computers/Monitor_Tower_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="110" y="380" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wO4rSnAQLMCB-P_E-RRo-3" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#4495D1;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.veeam.vmware_host;" vertex="1" parent="1">
+          <mxGeometry x="470" y="190" width="108" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="XDKbfwtwnSpaQGO_16ms-1" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=5;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="110" y="570" width="550" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="XDKbfwtwnSpaQGO_16ms-2" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;asus - host kvm&lt;/h1&gt;&lt;p&gt;-&amp;nbsp;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="570" width="250" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
