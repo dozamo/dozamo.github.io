@@ -2,8 +2,8 @@
 title: "The nmcli Command"
 description: "A guide to nmcli, the command-line tool for NetworkManager, essential for network management on modern systems."
 weight: 20
-categories: ["Linux", "LFCS"]
-tags: ["networking", "networking", "networkmanager", "nmcli", "linux", "rhel", "ubuntu"]
+categories: ["LFCS", "Linux"]
+tags: ["Linux CLI"]
 ---
 
 `nmcli` is the command-line utility for controlling `NetworkManager`, the standard service for network management on most modern desktop and server distributions (including RHEL/CentOS, Ubuntu, etc.). Unlike `ip`, changes made with `nmcli` are **persistent** by default.

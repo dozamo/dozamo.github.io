@@ -3,8 +3,7 @@ title: "2. Networking - 25%"
 description: >
   Focuses on configuring, securing, and troubleshooting network services, from IP addressing and SSH to firewalls and advanced traffic routing.
 weight: 30
-categories: ["Linux", "LFCS"]
-tags: ["networking", "linux", "sysadmin", "lfcs", "ipv4", "ipv6", "ssh", "firewall"]
+categories: ["LFCS", "Linux", "System Administration"]
 ---
 
 This critical domain covers the full spectrum of network configuration, management, and security on a Linux system, ensuring a server can communicate reliably and securely with its local network and the wider internet. It begins with the fundamentals of static and dynamic IPv4/IPv6 addressing and robust hostname resolution. You will learn to configure essential network services, including securing remote access with the OpenSSH server and client, and maintaining accurate system time by synchronizing with network time servers.

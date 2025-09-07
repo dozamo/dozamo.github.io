@@ -3,8 +3,8 @@ titleLink: "Network config. on RHEL 7 and Older"
 title: "Network config. on RHEL 7"
 description: "A guide to persistent network configuration on RHEL 7-based distributions (and older) using ifcfg files."
 weight: 70
-categories: ["Linux", "LFCS"]
-tags: ["networking", "rhel", "centos", "ifcfg", "sysconfig", "legacy"]
+categories: ["LFCS", "Linux"]
+tags: ["Linux CLI", "RHEL < 8"]
 ---
 
 On Red Hat Enterprise Linux (RHEL) 7, CentOS 7, and older versions, the traditional method for persistent network configuration is by editing script files in the `/etc/sysconfig/network-scripts/` directory.

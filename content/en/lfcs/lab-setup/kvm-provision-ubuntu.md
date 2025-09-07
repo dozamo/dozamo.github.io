@@ -4,7 +4,7 @@ date: 2017-01-05
 description: >
   Guide for an automated, text-based installation of an Ubuntu 22.04 LTS server for our lab.
 categories: ["Linux", "LFCS"]
-tags: [kvm, linux, Debian, Ubuntu] 
+tags: ["Virtualization", "Debian", "Ubuntu", "kvm"]
 weight: 200
 ---
 

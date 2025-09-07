@@ -2,8 +2,8 @@
 title: "El /bin y el /sbin"
 titleLink: "bin-sbin-directories"
 description: "Función de los directorios /bin y /sbin en Linux."
-tags: ["FHS-linux", "essential-commands", "LFCS"]
-categories: ["Essential Commands"]
+categories: ["LFCS", "Linux"]
+tags: ["FHS"]
 ---
 
 {{% alert title="/bin y /sbin" %}}

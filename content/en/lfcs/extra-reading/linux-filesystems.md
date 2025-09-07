@@ -2,8 +2,8 @@
 title: Linux Filesystems and Mount Points
 description: >
   Overview of Linux filesystems, partitions, and mount points for LFCS preparation.
-categories: [Study, lfcs, linux]
-tags: [linux, filesystem, mount, partitions, nfs]
+categories: ["LFCS", "Linux", "System Administration", "Laboratory"]
+tags: ["Linux CLI", "Server", "Troubleshooting"]
 weight: 100
 ---
 

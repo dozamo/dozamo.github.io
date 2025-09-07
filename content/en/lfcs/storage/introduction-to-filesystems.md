@@ -2,8 +2,8 @@
 title: "Introduction to File Systems"
 titleLink: "intro-filesystems"
 description: "Basic concepts of Linux file systems, including types, partitions, and mount points."
-tags: ["filesystem", "storage", "linux", "LFCS", "partitions", "mount-points"]
-categories: ["Linux", "LFCS"]
+categories: ["LFCS", "Linux"]
+tags: ["Linux CLI"]
 ---
 
 In Linux, the file system organizes and manages how data is stored and retrieved. Every file and directory is located in a unique hierarchy starting at `/`.

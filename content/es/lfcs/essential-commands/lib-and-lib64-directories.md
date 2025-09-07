@@ -2,8 +2,8 @@
 title: "Los directorios /lib y /lib64"
 titleLink: "lib-directories"
 description: "Propósito de /lib y /lib64 en Linux."
-tags: ["FHS-linux", "libraries", "LFCS"]
-categories: ["Essential Commands"]
+categories: ["LFCS", "Linux"]
+tags: ["FHS"]
 ---
 
 {{% alert title="/lib y /lib64" %}}

@@ -3,8 +3,8 @@ title: "Configuración de Red en Debian (y Ubuntu < 17.10)"
 titleLink: "Configuración de Red en Debian (y Ubuntu < 17.10) - /etc/network/interfaces"
 description: "Una guía práctica para la configuración de red persistente en Debian y derivados usando el archivo /etc/network/interfaces y el paquete ifupdown."
 weight: 50
-categories: ["Networking", "Implementación de Operaciones"]
-tags: ["networking", "debian", "ifupdown", "interfaces"]
+categories: ["LFCS", "Linux"]
+tags: ["Linux CLI", "Ubuntu - older versions"]
 ---
 
 El método tradicional y aún muy común para configurar la red en Debian (y derivados como Raspbian) es a través del archivo `/etc/network/interfaces`. Este sistema utiliza el paquete `ifupdown` para activar (`ifup`) y desactivar (`ifdown`) las interfaces según la configuración definida.

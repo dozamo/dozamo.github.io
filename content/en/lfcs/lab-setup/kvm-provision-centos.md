@@ -4,7 +4,7 @@ date: 2017-01-05
 description: >
   A step-by-step guide to installing a CentOS Stream 8 VM using virt-install and KVM storage pools
 categories: ["Linux", "LFCS"]
-tags: [kvm, linux, "Rocky Linux", RHEL]
+tags: ["Virtualization", "RHEL", "kvm"]
 weight: 100
 ---
 

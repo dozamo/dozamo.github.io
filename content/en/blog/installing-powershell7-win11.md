@@ -4,7 +4,8 @@ titleLink: "Installing PowerShell 7 on Windows 11: The Recommended Methods for I
 date: 2023-10-27
 description: >
   A comprehensive guide for system administrators and IT professionals on the best practices for installing PowerShell 7 on Windows 11, covering Winget, MSI, and Microsoft Store methods.
-categories: ["Windows", "PowerShell7"]
+categories: ["Windows"]
+tags: ["PowerShell7"]
 ---
 
 In the world of Windows system administration, PowerShell is the cornerstone of automation and configuration management. While Windows 11 ships with the reliable Windows PowerShell 5.1 (`powershell.exe`), the modern, cross-platform **PowerShell 7** (`pwsh.exe`) is where the future lies. It's built on .NET, offers superior performance, and receives all the latest features.

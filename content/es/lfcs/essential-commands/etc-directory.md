@@ -2,8 +2,8 @@
 title: "El directorio /etc"
 titleLink: "etc-directory"
 description: "Función del directorio /etc en Linux."
-tags: ["FHS-linux", "configuration", "LFCS"]
-categories: ["Essential Commands"]
+categories: ["LFCS", "Linux"]
+tags: ["FHS"]
 ---
 
 {{% alert title="/etc" %}}

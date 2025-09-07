@@ -3,8 +3,8 @@ title: "Network config. on Ubuntu"
 titleLink: "Network config. on Ubuntu (/etc/netplan)"
 description: "A guide to network configuration on modern Ubuntu Server versions using Netplan and its YAML syntax."
 weight: 60
-categories: ["Linux", "LFCS"]
-tags: ["networking", "ubuntu", "netplan", "systemd-networkd", "networkmanager"]
+categories: ["LFCS", "Linux"]
+tags: ["Linux CLI", "Ubuntu"]
 ---
 
 Since Ubuntu 17.10, `Netplan` is the default tool for network configuration. Netplan acts as an abstraction layer that generates the configuration for a backend service, which can be `systemd-networkd` (default on Ubuntu Server) or `NetworkManager` (default on Ubuntu Desktop).

@@ -2,8 +2,8 @@
 title: "The ip Command"
 description: "A practical guide to using the ip command for network management in Linux, essential for the LFCS certification."
 weight: 10
-categories: ["Linux", "LFCS"]
-tags: ["networking", "iproute2", "linux", "sysadmin"]
+categories: ["LFCS", "Linux"]
+tags: ["Linux CLI"]
 ---
 
 The `ip` command is the modern, unified tool for network management in Linux. It is part of the `iproute2` package and replaces classic tools like `ifconfig`, `route`, and `arp`. Its use is fundamental for any Linux system administrator.

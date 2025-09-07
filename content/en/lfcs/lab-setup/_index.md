@@ -4,7 +4,7 @@ title: Lab Environment Setup
 weight: 10
 description: This section details the process of setting up the virtual lab environment.
 categories: ["Linux", "LFCS"]
-tags: [kvm, linux]
+tags: [KVM, linux]
 ---
 
 This section details the process of setting up the virtual lab environment used for studying and practicing for the LFCS exam. The primary hypervisor used is KVM on a Linux host.

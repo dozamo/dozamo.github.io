@@ -2,8 +2,8 @@
 title: "The ifconfig Command (Legacy)"
 description: "A review of the ifconfig command for network management. Although deprecated, it's important to know for older systems and the LFCS certification."
 weight: 30
-categories: ["Linux", "LFCS"]
-tags: ["networking", "ifconfig", "legacy", "net-tools", "sysadmin"]
+categories: ["LFCS", "Linux"]
+tags: ["Linux CLI"]
 ---
 
 The `ifconfig` (interface configuration) command is the classic tool for network configuration on Unix-like systems. It belongs to the `net-tools` package, which has been **deprecated** on most modern Linux distributions in favor of `iproute2` (which provides the `ip` command).

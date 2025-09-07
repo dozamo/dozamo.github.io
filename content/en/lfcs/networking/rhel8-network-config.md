@@ -2,8 +2,8 @@
 title: "Network config. on RHEL 8+"
 description: "Managing persistent network configuration on RHEL 8-based distributions (and newer) using NetworkManager, nmcli, and nmtui."
 weight: 40
-categories: ["Linux", "LFCS"]
-tags: ["networking", "rhel", "centos", "almalinux", "rockylinux", "networkmanager", "nmcli", "nmtui"]
+categories: ["LFCS", "Linux"]
+tags: ["Linux CLI", "RHEL"]
 ---
 
 On Red Hat Enterprise Linux (RHEL) 8 and its derivatives (CentOS Stream, AlmaLinux, Rocky Linux), `NetworkManager` is the default networking service and the only supported tool for managing network configurations. Interaction is primarily done through the `nmcli` (command-line) and `nmtui` (text user interface) utilities.

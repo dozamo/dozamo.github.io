@@ -3,8 +3,8 @@ title: "Network config. on Debian (and Ubuntu older)"
 titleLink: "Network Configuration on Debian (and Ubuntu < 17.10) - /etc/network/interfaces)"
 description: "A practical guide for persistent network configuration on Debian and its derivatives using the /etc/network/interfaces file and the ifupdown package."
 weight: 50
-categories: ["Linux", "LFCS"]
-tags: ["networking", "debian", "ubuntu (version old)",  "ifupdown", "interfaces"]
+categories: ["LFCS", "Linux"]
+tags: ["Linux CLI", "Debian", "Ubuntu < 17.10"]
 ---
 
 The traditional and still very common method for configuring the network on Debian (and derivatives like Raspbian) is through the `/etc/network/interfaces` file. This system uses the `ifupdown` package to bring interfaces up (`ifup`) and down (`ifdown`) according to the defined configuration.

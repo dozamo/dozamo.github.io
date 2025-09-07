@@ -2,9 +2,9 @@
 title: "mount command"
 titleLink: "mount"
 description: "Practical guide to using the mount command in Linux to mount file systems."
-tags: ["mount", "filesystem", "storage", "linux-cli", "LFCS"]
-categories: ["Linux", "LFCS"]
 weight: 170
+categories: ["LFCS", "Linux"]
+tags: ["Linux CLI"]
 ---
 
 The `mount` command in Linux is used to attach file systems and make them accessible through a mount point in the directory tree.

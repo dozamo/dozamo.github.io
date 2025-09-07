@@ -4,4 +4,4 @@ weight: 20
 #menu: {main: {weight: 30}}
 ---
 
-Operationes
+Operations

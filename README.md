@@ -78,8 +78,8 @@ Se listan aquí las categorias (`categories`) y tags (`tags`) actuales utilizado
 ```markdown
 # Definiciones en el front matter (metadatos de los markdown)
 ...
-categories: ["AI", "Technical Documentation", "LFCS", "Laboratory", "Linux",  "Windows", "PowerShell7"]
-tags: ["Linux CLI", "Prompt Engineering"]
+categories: ["AI", "Technical Documentation", "LFCS", "Laboratory", "Linux",  "Windows", "Ubuntu", "System Administration"]
+tags: ["Linux CLI", "Prompt Engineering", "virtualization", "RHEL", "RHEL < 8", "Debian", "Ubuntu", "LTS", "Ubuntu < 17.10", "KVM", "PowerShell7", "FHS", "Upgrade", "Server", "Troubleshooting"]
 ...
 ```
 
