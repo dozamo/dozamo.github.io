@@ -1,11 +1,12 @@
 # My
 *.v-*
 /*.org
-/docsy-example
-/docs.*
+#/docsy-example
+#/docs.*
 *.zip
 *.org*
-PKM*/
+#PKM*/
+/deprecated*/
 
 # Hugo build output
 /public/
